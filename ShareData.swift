@@ -181,5 +181,6 @@ class ProductData: NSObject {
     
     
     static let dbProRef = Database.database().reference().child(ProductData.product_table)
+    static let rpProRef = Database.database().reference().child("ReportedProducts")
     static var product_info: ProductModels!
 }
