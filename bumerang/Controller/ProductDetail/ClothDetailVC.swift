@@ -33,7 +33,7 @@ class ClothDetailVC: BaseViewController {
     @IBOutlet weak var ui_lblBUsername: UILabel!
   //  @IBOutlet weak var ui_lblRatingval: UILabel!
  //   @IBOutlet weak var ui_viewRaing: UIView!
-
+    @IBOutlet weak var report_product: UIButton!
     
     @IBOutlet weak var ui_imgEmail: UIImageView!
     @IBOutlet weak var ui_imgPhone: UIImageView!
@@ -61,6 +61,7 @@ class ClothDetailVC: BaseViewController {
             ui_editButton.isHidden = false
             ui_delButton.isHidden = false
             ui_messageButton.isHidden = true
+            report_product.isHidden = true
         }
     }
 
@@ -216,7 +217,17 @@ class ClothDetailVC: BaseViewController {
     }
     
     
-    
+    //MARK:- product report func
+    @IBAction func didReportPro(_ sender: Any) {
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {(action) -> Void in
+            print("kkk")
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     
     
       @IBAction func gobuisnesspro(_ sender: Any) {

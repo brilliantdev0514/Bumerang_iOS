@@ -23,7 +23,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchbar: UISearchBar!
     @IBOutlet weak var ui_mapView: GMSMapView!
     @IBOutlet weak var ui_tableView: UITableView!
-    
+    @IBOutlet weak var report_product: UIButton!
     var searchCompleter = MKLocalSearchCompleter()
     var searchResults = [MKLocalSearchCompletion]()
     
@@ -40,7 +40,17 @@ class SearchViewController: UIViewController {
         searchCompleter.delegate = self
     }
        
-    
+    //MARK:- product report func
+    @IBAction func didReportPro(_ sender: Any) {
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {(action) -> Void in
+            print("kkk")
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     @IBAction func didcancelBtn(_ sender: Any)
     {
         self.dismiss(animated: true, completion: nil)

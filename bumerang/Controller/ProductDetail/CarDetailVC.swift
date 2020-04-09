@@ -30,7 +30,7 @@ class CarDetailVC: BaseViewController {
     @IBOutlet weak var ui_txtDeposit: UITextField!
     @IBOutlet weak var ui_txvDescription: UITextView!
     @IBOutlet weak var ui_mapView: MKMapView!
-    
+    @IBOutlet weak var report_product: UIButton!
     @IBOutlet weak var ui_viewRent: UIView!
     @IBOutlet weak var ui_avatarView: UIView!
     @IBOutlet weak var ui_imgAvatar: UIImageView!
@@ -63,6 +63,7 @@ class CarDetailVC: BaseViewController {
             ui_editButton.isHidden = false
             ui_delButton.isHidden = false
             ui_messageButton.isHidden = true
+            report_product.isHidden = true
         }
     }
     
@@ -148,7 +149,17 @@ class CarDetailVC: BaseViewController {
           //buis(vc: self)
         gotoMyInfoVC(oneProduct: oneProduct!)
       }
-    
+    //MARK:- product report func
+    @IBAction func didReportPro(_ sender: Any) {
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {(action) -> Void in
+            print("kkk")
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     @IBAction func shareAction(_ sender: Any) {
                 
         

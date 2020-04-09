@@ -38,7 +38,7 @@ class CaravanDetailVC: BaseViewController {
     @IBOutlet weak var ui_imgPhone: UIImageView!
     @IBOutlet weak var ui_imgGmail: UIImageView!
     @IBOutlet weak var ui_imgFace: UIImageView!
-    
+    @IBOutlet weak var report_product: UIButton!
     @IBOutlet weak var ui_messageButton: UIButton!
     @IBOutlet weak var ui_editButton: UIButton!
     @IBOutlet weak var ui_delButton: UIButton!
@@ -60,6 +60,7 @@ class CaravanDetailVC: BaseViewController {
             ui_editButton.isHidden = false
             ui_delButton.isHidden = false
             ui_messageButton.isHidden = true
+            report_product.isHidden = true
         }
     }
         
@@ -139,7 +140,17 @@ self.navigationController?.isNavigationBarHidden = true
                     self.present(alert, animated: true, completion: nil)
                 })
        }
-    
+    //MARK:- product report func
+    @IBAction func didReportPro(_ sender: Any) {
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {(action) -> Void in
+            print("kkk")
+            
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     @IBAction func onClickUpdate(_ sender: Any) {
      
         setTransitionType(.fromLeft)

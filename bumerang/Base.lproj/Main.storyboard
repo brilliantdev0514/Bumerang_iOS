@@ -3289,7 +3289,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="2086.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPR-QQ-9bS" userLabel="autoView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1115.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="asG-PV-nON" userLabel="mainImg">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="308"/>
@@ -3839,7 +3839,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                         <constraints>
                                             <constraint firstItem="asG-PV-nON" firstAttribute="leading" secondItem="ZPR-QQ-9bS" secondAttribute="leading" id="1Fz-6T-Sww"/>
                                             <constraint firstItem="7rg-ST-0rO" firstAttribute="leading" secondItem="ZPR-QQ-9bS" secondAttribute="leading" id="2W8-Ch-fhv"/>
-                                            <constraint firstAttribute="height" constant="1115.5" id="8ep-y8-UM4"/>
+                                            <constraint firstAttribute="height" constant="1200" id="6DQ-5C-SZL"/>
                                             <constraint firstAttribute="trailing" secondItem="hqd-Pt-fDb" secondAttribute="trailing" constant="15" id="CLd-dI-Vpf"/>
                                             <constraint firstItem="U8p-g4-nb5" firstAttribute="top" secondItem="hqd-Pt-fDb" secondAttribute="bottom" constant="8" id="HJs-bk-zAB"/>
                                             <constraint firstAttribute="trailing" secondItem="7rg-ST-0rO" secondAttribute="trailing" id="IPw-23-VPP"/>
@@ -3988,6 +3988,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                     <size key="freeformSize" width="414" height="2150"/>
                     <connections>
                         <outlet property="imagecollectionview" destination="7vT-pu-2cs" id="1Qi-mo-SkN"/>
+                        <outlet property="report_product" destination="zsO-rV-PaS" id="68n-9S-LGe"/>
                         <outlet property="ui_avatarView" destination="UaJ-d4-osG" id="uCE-gr-w0r"/>
                         <outlet property="ui_delButton" destination="JXd-jh-peI" id="hGy-3I-hLG"/>
                         <outlet property="ui_editBtn" destination="0hT-US-nnX" id="arX-KE-OhI"/>
@@ -4573,6 +4574,9 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                             <constraint firstAttribute="height" constant="40" id="dQJ-2b-ton"/>
                                                         </constraints>
                                                         <state key="normal" title="Roport product"/>
+                                                        <connections>
+                                                            <action selector="didReportPro:" destination="mmF-Ol-mXC" eventType="touchUpInside" id="fcb-0o-MMK"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4762,6 +4766,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                     </navigationItem>
                     <size key="freeformSize" width="414" height="2150"/>
                     <connections>
+                        <outlet property="report_product" destination="sTG-7Z-91L" id="KVY-2D-uK7"/>
                         <outlet property="ui_avatarView" destination="opn-ju-Ufw" id="2c9-Xu-yY2"/>
                         <outlet property="ui_delButton" destination="mk2-kr-uJJ" id="teF-cj-zcE"/>
                         <outlet property="ui_editBtn" destination="X4q-lF-CqL" id="d5W-Xm-G5l"/>
@@ -5264,6 +5269,9 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                             <constraint firstAttribute="height" constant="40" id="9ND-Kp-Usl"/>
                                                         </constraints>
                                                         <state key="normal" title="Roport product"/>
+                                                        <connections>
+                                                            <action selector="didReportPro:" destination="KCD-ZB-CyI" eventType="touchUpInside" id="NAC-Zb-iCm"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5478,6 +5486,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                     </navigationItem>
                     <size key="freeformSize" width="414" height="2150"/>
                     <connections>
+                        <outlet property="report_product" destination="ym3-UW-vud" id="6Wj-Cq-31r"/>
                         <outlet property="ui_avatarView" destination="cEK-HL-kNr" id="0aG-I4-A0f"/>
                         <outlet property="ui_delButton" destination="rRz-ee-Ucv" id="x1J-Hp-uCb"/>
                         <outlet property="ui_editBtn" destination="EHn-K8-VEO" id="GcZ-nJ-ivA"/>
@@ -6539,6 +6548,9 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                             <constraint firstAttribute="height" constant="40" id="wZ3-Jm-igu"/>
                                                         </constraints>
                                                         <state key="normal" title="Roport product"/>
+                                                        <connections>
+                                                            <action selector="didReportPro:" destination="fIV-JG-ynO" eventType="touchUpInside" id="wsL-ih-fW2"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6737,6 +6749,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                     </navigationItem>
                     <size key="freeformSize" width="414" height="2150"/>
                     <connections>
+                        <outlet property="report_product" destination="2dU-OZ-tCR" id="0fs-TX-e1x"/>
                         <outlet property="ui_avatarView" destination="ZOQ-Ye-uEK" id="t2F-N7-dzG"/>
                         <outlet property="ui_delButton" destination="ixM-yX-cA0" id="e7i-wc-M0H"/>
                         <outlet property="ui_editBtn" destination="KgP-Y1-DmR" id="W0p-0n-tXf"/>
@@ -7203,6 +7216,9 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                             <constraint firstAttribute="height" constant="40" id="Pkg-mb-bh7"/>
                                                         </constraints>
                                                         <state key="normal" title="Roport product"/>
+                                                        <connections>
+                                                            <action selector="didReportPro:" destination="G20-Hv-xER" eventType="touchUpInside" id="FqV-u8-sn9"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -7401,6 +7417,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                     </navigationItem>
                     <size key="freeformSize" width="414" height="2150"/>
                     <connections>
+                        <outlet property="report_product" destination="Gzx-3K-Nj1" id="DyU-Y7-K37"/>
                         <outlet property="ui_avatarView" destination="eyF-YR-luH" id="XMw-gH-aTI"/>
                         <outlet property="ui_delButton" destination="4Jo-cD-bki" id="csG-a7-eWz"/>
                         <outlet property="ui_editBtn" destination="lqo-iR-QKZ" id="H1B-0D-qBb"/>
@@ -7781,6 +7798,9 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                             <constraint firstAttribute="height" constant="40" id="gYj-6o-Dj6"/>
                                                         </constraints>
                                                         <state key="normal" title="Roport product"/>
+                                                        <connections>
+                                                            <action selector="didReportPro:" destination="Waw-0P-EOu" eventType="touchUpInside" id="cqm-kz-Gmp"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -7979,6 +7999,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                     </navigationItem>
                     <size key="freeformSize" width="414" height="2150"/>
                     <connections>
+                        <outlet property="report_product" destination="Uno-NG-4Jb" id="R4w-HV-CeW"/>
                         <outlet property="ui_avatarView" destination="MdU-8f-nyN" id="exO-2y-kIo"/>
                         <outlet property="ui_delButton" destination="1bH-bE-SU4" id="3kK-QP-sEN"/>
                         <outlet property="ui_editBtn" destination="x7O-b9-v2r" id="1kI-1q-X7O"/>
@@ -8357,6 +8378,9 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                             <constraint firstAttribute="height" constant="40" id="smv-Fk-9ea"/>
                                                         </constraints>
                                                         <state key="normal" title="Roport product"/>
+                                                        <connections>
+                                                            <action selector="didReportPro:" destination="Dh9-zf-2rt" eventType="touchUpInside" id="P8M-fa-iJj"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -8556,6 +8580,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                     <size key="freeformSize" width="414" height="2150"/>
                     <connections>
                         <outlet property="imagecollection" destination="feB-Mm-AXa" id="6cG-Sn-ZPb"/>
+                        <outlet property="report_product" destination="SKn-qu-Nbj" id="Dai-x5-lPj"/>
                         <outlet property="ui_avatarView" destination="Mo5-sZ-Qzv" id="geT-T6-x31"/>
                         <outlet property="ui_delButton" destination="ARa-wB-4aA" id="J5c-Fq-CJm"/>
                         <outlet property="ui_editBtn" destination="Fke-yr-A68" id="3Ah-HC-K4i"/>
