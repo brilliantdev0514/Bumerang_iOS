@@ -222,8 +222,12 @@ class ClothDetailVC: BaseViewController {
         let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {(action) -> Void in
-            print("kkk")
             
+               //TODO; firebase data write here
+               
+               
+               self.navigationController?.popViewController(animated: true)
+              
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)

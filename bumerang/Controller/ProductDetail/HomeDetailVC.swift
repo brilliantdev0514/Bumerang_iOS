@@ -216,7 +216,7 @@ class HomeDetailVC: BaseViewController {
             
             
             self.navigationController?.popViewController(animated: true)
-                       
+                     
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         DispatchQueue.main.async(execute:  {

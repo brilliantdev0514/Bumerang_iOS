@@ -160,7 +160,6 @@ class CarDetailVC: BaseViewController {
                
                self.navigationController?.popViewController(animated: true)
             
-            
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
