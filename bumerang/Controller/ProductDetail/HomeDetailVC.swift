@@ -203,6 +203,16 @@ class HomeDetailVC: BaseViewController {
                 })
        }
     
+    @IBAction func didReportPro(_ sender: Any) {
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {(action) -> Void in
+            print("kkk")
+            
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     @IBAction func onClickUpdate(_ sender: Any) {
      
         setTransitionType(.fromLeft)
