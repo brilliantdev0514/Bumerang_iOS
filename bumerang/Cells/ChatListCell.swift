@@ -2,6 +2,9 @@
 import Foundation
 import UIKit
 import SDWebImage
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class ChatListCell: UICollectionViewCell {
     
@@ -32,32 +35,14 @@ class ChatListCell: UICollectionViewCell {
             
         }
     }
-    @IBAction func popUpActionCell(longPressGesture : UILongPressGestureRecognizer)
-        {
-            // Delete selected Cell
-            let point = longPressGesture.location(in: self.collectionView)
-            let indexPath = self.collectionView?.indexPathForItem(at: point)
-    //        let cell = self.collectionView?.cellForItem(at: indexPath!)
-            if indexPath != nil
-            {
-                let alertActionCell = UIAlertController(title: "Action Recipe Cell", message: "Choose an action for the selected recipe", preferredStyle: .actionSheet)
-
-                // Configure Remove Item Action
-                let deleteAction = UIAlertAction(title: "Delete", style: .destructive, handler: { action in
-                    RecipeDataManager.shared.recipes.remove(at: indexPath!.row)
-                    print("Cell Removed")
-                    self.collectionView!.reloadData()
-                })
-
-                // Configure Cancel Action Sheet
-                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: { acion in
-                    print("Cancel actionsheet")
-                })
-
-                alertActionCell.addAction(deleteAction)
-                alertActionCell.addAction(cancelAction)
-                self.present(alertActionCell, animated: true, completion: nil)
-
-            }
-        }
+    
+    @IBAction func didTrashClicked(){
+        
+        let uid = Auth.auth().currentUser!.uid
+        let receivedId = self.entity.senderId
+        let room_id = "\(uid)_\(receivedId)"
+        Database.database().reference().child("message").child(room_id).removeValue()
+    }
+    
 }
+

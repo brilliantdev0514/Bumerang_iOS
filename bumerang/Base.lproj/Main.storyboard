@@ -17546,7 +17546,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                             <rect key="frame" x="0.0" y="0.0" width="335" height="95"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsg-c0-PNU" userLabel="contentView">
+                                                                <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsg-c0-PNU" userLabel="contentView">
                                                                     <rect key="frame" x="0.0" y="15" width="335" height="65"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_user_photo" translatesAutoresizingMaskIntoConstraints="NO" id="pwa-pS-C12">
@@ -17603,6 +17603,23 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                                         </userDefinedRuntimeAttribute>
                                                                                     </userDefinedRuntimeAttributes>
                                                                                 </label>
+                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jOy-8P-eoa">
+                                                                                    <rect key="frame" x="215" y="20.5" width="25" height="24"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="25" id="3dJ-PQ-SUn"/>
+                                                                                        <constraint firstAttribute="width" constant="25" id="UgZ-vt-lvf"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIM-qw-vCH">
+                                                                                    <rect key="frame" x="215" y="20" width="25" height="25"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="25" id="FGG-um-izS"/>
+                                                                                        <constraint firstAttribute="height" constant="25" id="LYQ-xP-b3B"/>
+                                                                                    </constraints>
+                                                                                    <connections>
+                                                                                        <action selector="didTrashClicked" destination="ptv-Ny-RuR" eventType="touchUpInside" id="HyM-FC-VoS"/>
+                                                                                    </connections>
+                                                                                </button>
                                                                             </subviews>
                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <constraints>
@@ -17612,11 +17629,15 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                                 <constraint firstItem="56P-9o-gmI" firstAttribute="trailing" secondItem="NjS-OY-y6h" secondAttribute="leading" constant="-10" id="Aaa-dD-rwq"/>
                                                                                 <constraint firstItem="56P-9o-gmI" firstAttribute="top" secondItem="cgW-4Z-4lz" secondAttribute="bottom" constant="5" id="EMc-eA-CEb"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="NjS-OY-y6h" secondAttribute="trailing" id="F5V-gs-nYt"/>
+                                                                                <constraint firstItem="jOy-8P-eoa" firstAttribute="centerY" secondItem="382-XX-6sE" secondAttribute="centerY" id="HYf-6g-N5W"/>
+                                                                                <constraint firstItem="wIM-qw-vCH" firstAttribute="centerY" secondItem="382-XX-6sE" secondAttribute="centerY" id="PeJ-8l-hSj"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="jOy-8P-eoa" secondAttribute="trailing" constant="20" id="RvI-Fg-J90"/>
                                                                                 <constraint firstItem="whn-pz-BwH" firstAttribute="trailing" secondItem="382-XX-6sE" secondAttribute="trailing" id="XCc-R3-7DQ"/>
                                                                                 <constraint firstItem="cgW-4Z-4lz" firstAttribute="top" secondItem="382-XX-6sE" secondAttribute="top" id="h56-k2-WWS"/>
                                                                                 <constraint firstItem="whn-pz-BwH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="382-XX-6sE" secondAttribute="leading" constant="20" symbolic="YES" id="hVz-dC-VHF"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="cgW-4Z-4lz" secondAttribute="trailing" id="kHf-Ds-icp"/>
                                                                                 <constraint firstItem="56P-9o-gmI" firstAttribute="leading" secondItem="382-XX-6sE" secondAttribute="leading" id="uAz-RK-4bG"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="wIM-qw-vCH" secondAttribute="trailing" constant="20" id="zvw-G4-7yE"/>
                                                                             </constraints>
                                                                         </view>
                                                                     </subviews>
@@ -17862,7 +17883,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Qi-gz-KsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6223" y="1523"/>
+            <point key="canvasLocation" x="6221.25" y="1522.1830985915494"/>
         </scene>
         <!--Chat RoomVC-->
         <scene sceneID="jX3-M9-cqh">
@@ -23669,6 +23690,7 @@ Product!</string>
         <image name="setting1.png" width="128" height="128"/>
         <image name="splash_1" width="256" height="256"/>
         <image name="telephone (1).png" width="418.90908813476562" height="418.90908813476562"/>
+        <image name="trash.circle.fill" catalog="system" width="64" height="60"/>
         <image name="uncheck" width="20" height="20"/>
         <image name="welcom_right" width="512" height="512"/>
         <image name="welcome1_center" width="512" height="512"/>

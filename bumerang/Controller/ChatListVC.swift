@@ -23,17 +23,9 @@ class ChatListVC: BaseViewController {
     @IBOutlet weak var nomessageimage: UIImageView!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-      
         self.view.bringSubviewToFront(outerview)
-       
-        loadListdata()
-        
-        
-       
-        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -45,6 +37,7 @@ class ChatListVC: BaseViewController {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
     }
+    
     
     
     func loadListdata() {
@@ -198,11 +191,10 @@ extension ChatListVC : UICollectionViewDataSource {
         
         cell.entity = chatlistData[indexPath.row]
         
-        
-        
         return cell
     }
 }
+
 
 extension ChatListVC : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
