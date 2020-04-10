@@ -489,7 +489,6 @@ class MainpageVC: BaseViewController {
                             if oneProductModel!.category != nil {
                             
                                 let catagoryNum = Int(oneProductModel!.category)
-                                print(catagoryNum)
                                 if isFirst {
                                     self.productData.append(oneProductModel!)
                                     self.allProductData.append(oneProductModel!)
