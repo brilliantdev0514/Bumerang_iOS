@@ -53,8 +53,8 @@ class BaseViewController: UIViewController, AddProductSucessVCDelegate {
     
     func gotoMyInfoVC(oneProduct : ProductModels?) {
         
-        if (ShareData.user_info.membership == "") {
-
+//        if (ShareData.user_info.membership != "1") {
+        if ( != "1") {
             setTransitionType(.fromLeft)
             let toVC = self.storyboard?.instantiateViewController( withIdentifier: "StandardInfoVC") as! StandardInfoVC
             toVC.oneProduct = oneProduct

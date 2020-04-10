@@ -28,6 +28,7 @@ class StandardInfoVC: BaseViewController {
     @IBOutlet weak var collectionHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var messageButton: UIButton!
     @IBOutlet weak var settingButton: UIButton!
+    @IBOutlet weak var report_user: UIButton!
     
     var productData = [ProductModels]()
     
@@ -112,6 +113,24 @@ class StandardInfoVC: BaseViewController {
                         })
     }
     
+    //MARK:- report user function
+    @IBAction func didClickReportUserBtn(_ sender: Any) {
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {(action) -> Void in
+            let date = Date()
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            let current_date = dateFormatter.string(from: date)
+            let uid = Auth.auth().currentUser!.uid
+            let other_id = self.oneProduct!.owner_id
+            Database.database().reference().child("ReportedUsers").child(other_id!).child(uid).setValue(current_date)
+                       
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+
+    }
 
     
     func setupMenuButton() {
