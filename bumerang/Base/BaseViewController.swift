@@ -4,6 +4,9 @@ import SwiftyUserDefaults
 import Toast_Swift
 import NotificationCenter
 import ALLoadingView
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 var selectedUserType = 0
 var selectedCategoryID = -1
@@ -50,25 +53,28 @@ class BaseViewController: UIViewController, AddProductSucessVCDelegate {
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated: false, completion: nil)
     }
-    
+    //MARK: - go to profile VC
     func gotoMyInfoVC(oneProduct : ProductModels?) {
-        
-//        if (ShareData.user_info.membership != "1") {
-        if ( != "1") {
-            setTransitionType(.fromLeft)
-            let toVC = self.storyboard?.instantiateViewController( withIdentifier: "StandardInfoVC") as! StandardInfoVC
-            toVC.oneProduct = oneProduct
-            toVC.modalPresentationStyle = .fullScreen
-            self.navigationController?.pushViewController(toVC, animated: true)
-            
-        } else {
-            
-//            self.gotoNavigationScreen("BusinessInfoVC", direction: .fromLeft)
-            setTransitionType(.fromLeft)
-            let toVC = self.storyboard?.instantiateViewController( withIdentifier: "BusinessInfoVC") as! BusinessInfoVC
-            toVC.oneProduct = oneProduct
-            toVC.modalPresentationStyle = .fullScreen
-            self.navigationController?.pushViewController(toVC, animated: true)
+        Database.database().reference().child("user").child(oneProduct!.owner_id).observeSingleEvent(of: .value, with: { (snapshot) in
+          // Get user value
+          let value = snapshot.value as? NSDictionary
+          let membershipStatus = value?["membership"] as? String ?? ""
+            if (membershipStatus != "1") {
+                self.setTransitionType(.fromLeft)
+                let toVC = self.storyboard?.instantiateViewController( withIdentifier: "StandardInfoVC") as! StandardInfoVC
+                toVC.oneProduct = oneProduct
+                toVC.modalPresentationStyle = .fullScreen
+                self.navigationController?.pushViewController(toVC, animated: true)
+            } else {
+                self.setTransitionType(.fromLeft)
+                let toVC = self.storyboard?.instantiateViewController( withIdentifier: "BusinessInfoVC") as! BusinessInfoVC
+                toVC.oneProduct = oneProduct
+                toVC.modalPresentationStyle = .fullScreen
+                self.navigationController?.pushViewController(toVC, animated: true)
+            }
+          // ...
+          }) { (error) in
+            print(error.localizedDescription)
         }
     }
     
