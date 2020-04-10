@@ -25,7 +25,10 @@ class ChatListVC: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadListdata()
         self.view.bringSubviewToFront(outerview)
+        
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -39,7 +42,7 @@ class ChatListVC: BaseViewController {
     }
     
     
-    
+    //MARK:- chat list data load function here
     func loadListdata() {
 //        for i in 0 ..< 0 {
 //            
@@ -144,6 +147,31 @@ class ChatListVC: BaseViewController {
         self.gotoMyInfoVC(oneProduct: nil)
         
     }
+    //MARK:- handle gesture
+    @IBAction func handleGesture(_ sender: Any) {
+        if (sender as AnyObject).state == UIGestureRecognizer.State.began
+        {
+                let alertController = UIAlertController(title: nil, message:
+                    "Are you sure delete?", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: {(action) -> Void in
+                
+                
+                
+//                let uid = Auth.auth().currentUser!.uid
+//                let receivedId = self.entity.senderId
+//                let room_id = "\(uid)_\(receivedId)"
+//                Database.database().reference().child("message").child(room_id).removeValue()
+                self.viewDidLoad()
+            }))
+            alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
+    
+                self.present(alertController, animated: true, completion: nil)
+        }
+
+
+        }
+    
+    
 }
 
 extension ChatListVC : UISearchBarDelegate {
@@ -159,7 +187,7 @@ extension ChatListVC : UISearchBarDelegate {
         searchBar.endEditing(true)
     }
 }
-
+//MARK:- go to chat room vc
 extension ChatListVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -168,6 +196,7 @@ extension ChatListVC: UICollectionViewDelegate {
         toVC.receiveUserId = chatlistData[indexPath.row].senderId
         
         self.navigationController?.pushViewController(toVC, animated: true)
+        
         
     }
     
@@ -187,9 +216,8 @@ extension ChatListVC : UICollectionViewDataSource {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChatListCell", for: indexPath) as! ChatListCell
         
-        
-        
         cell.entity = chatlistData[indexPath.row]
+        cell.ui_trash.tag = indexPath.row
         
         return cell
     }

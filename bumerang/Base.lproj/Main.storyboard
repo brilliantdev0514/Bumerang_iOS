@@ -17725,7 +17725,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                                         <constraint firstAttribute="height" constant="25" id="LYQ-xP-b3B"/>
                                                                                     </constraints>
                                                                                     <connections>
-                                                                                        <action selector="didTrashClicked" destination="ptv-Ny-RuR" eventType="touchUpInside" id="HyM-FC-VoS"/>
+                                                                                        <action selector="handleGesture:" destination="CCM-fB-Ccd" eventType="touchUpInside" id="XJA-So-Rhi"/>
                                                                                     </connections>
                                                                                 </button>
                                                                             </subviews>
@@ -17789,6 +17789,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                             <outlet property="ui_avartarImg" destination="pwa-pS-C12" id="BjB-7d-5nX"/>
                                                             <outlet property="ui_contentLbl" destination="56P-9o-gmI" id="3Lz-hR-o1u"/>
                                                             <outlet property="ui_timeLbl" destination="whn-pz-BwH" id="52f-Zf-whf"/>
+                                                            <outlet property="ui_trash" destination="wIM-qw-vCH" id="zVK-e9-GLi"/>
                                                             <outlet property="ui_unreadLbl" destination="NjS-OY-y6h" id="MHT-Ej-uF2"/>
                                                             <outlet property="ui_userLbl" destination="cgW-4Z-4lz" id="9CD-TN-xwc"/>
                                                         </connections>

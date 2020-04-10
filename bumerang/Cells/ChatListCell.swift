@@ -13,6 +13,9 @@ class ChatListCell: UICollectionViewCell {
     @IBOutlet weak var ui_contentLbl: UILabel!
     @IBOutlet weak var ui_timeLbl: UILabel!
     @IBOutlet weak var ui_unreadLbl: UILabel!
+    @IBOutlet weak var ui_trash: UIButton!
+    
+    var btnIndex : Int = 0
     
     var entity : ChatListModel! {
         didSet{
@@ -31,18 +34,8 @@ class ChatListCell: UICollectionViewCell {
             } else {
                 ui_unreadLbl.isHidden = true
             }
-            
-            
+            btnIndex = ui_trash.tag
         }
     }
-    
-    @IBAction func didTrashClicked(){
-        
-        let uid = Auth.auth().currentUser!.uid
-        let receivedId = self.entity.senderId
-        let room_id = "\(uid)_\(receivedId)"
-        Database.database().reference().child("message").child(room_id).removeValue()
-    }
-    
 }
 
