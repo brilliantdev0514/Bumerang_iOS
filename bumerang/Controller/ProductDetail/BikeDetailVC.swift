@@ -159,15 +159,22 @@ class BikeDetailVC: BaseViewController {
         let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {(action) -> Void in
+            let date = Date()
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            let current_date = dateFormatter.string(from: date)
+            let uid = Auth.auth().currentUser!.uid
+            let pro_id = self.oneProduct_!.product_id
+            ProductData.rpProRef.child(pro_id!).child(uid).setValue(current_date)
             
-               //TODO; firebase data write here
-               
-               
-               self.navigationController?.popViewController(animated: true)
-          
+            self.navigationController?.popViewController(animated: true)
+                       
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        DispatchQueue.main.async(execute:  {
+            self.present(alert, animated: true, completion: nil)
+        })
+
     }
     @IBAction func onClickChat(_ sender: Any) {
         

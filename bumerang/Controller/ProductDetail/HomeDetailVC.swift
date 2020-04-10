@@ -211,17 +211,22 @@ class HomeDetailVC: BaseViewController {
         let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {(action) -> Void in
-            
-            //TODO; firebase data write here
-            
+            let date = Date()
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            let current_date = dateFormatter.string(from: date)
+            let uid = Auth.auth().currentUser!.uid
+            let pro_id = self.oneProduct!.product_id
+            ProductData.rpProRef.child(pro_id!).child(uid).setValue(current_date)
             
             self.navigationController?.popViewController(animated: true)
-                     
+                       
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
         DispatchQueue.main.async(execute:  {
             self.present(alert, animated: true, completion: nil)
         })
+
     }
     
     
