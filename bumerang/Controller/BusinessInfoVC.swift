@@ -44,6 +44,7 @@ class BusinessInfoVC: BaseViewController {
                 uid = oneProduct!.owner_id
                 if uid == ShareData.user_info.userId {
                     messageButton.removeFromSuperview()
+                    report_user.isHidden = true
                     setupMenuButton()
                 } else {
                     messageButton.cornerRadius = messageButton.bounds.height/2
@@ -53,6 +54,14 @@ class BusinessInfoVC: BaseViewController {
                 messageButton.removeFromSuperview()
             }
             
+            if Auth.auth().currentUser?.uid != "" {
+                messageButton.removeFromSuperview()
+                report_user.isHidden = true
+                setupMenuButton()
+            } else {
+                messageButton.cornerRadius = messageButton.bounds.height/2
+                settingButton.isHidden = true
+            }
             ShareData.dbUserRef.child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
                       // Get user value
                         
@@ -154,11 +163,13 @@ class BusinessInfoVC: BaseViewController {
         }
         
         @IBAction func rightpressed(){
-            self.gotoNavigationScreen("UserProfileVC", direction: .fromRight)
+            let toVC = storyboard?.instantiateViewController(withIdentifier: "UserProfileVC") as! UserProfileVC
+            toVC.modalPresentationStyle = .overFullScreen
+            self.present(toVC, animated: true, completion: nil)
         }
         
         @IBAction func leftbuttonPressed() {
-            self.navigationController?.popViewController(animated: true)
+            self.gotoTabVC("MainpageAfterNav")
         }
         
         @IBAction func onClickChat(_ sender: Any) {

@@ -59,15 +59,15 @@ class BaseViewController: UIViewController, AddProductSucessVCDelegate {
           // Get user value
           let value = snapshot.value as? NSDictionary
           let membershipStatus = value?["membership"] as? String ?? ""
-            if (membershipStatus != "1") {
+            if (membershipStatus == "1") {
                 self.setTransitionType(.fromLeft)
-                let toVC = self.storyboard?.instantiateViewController( withIdentifier: "StandardInfoVC") as! StandardInfoVC
+                let toVC = self.storyboard?.instantiateViewController( withIdentifier: "BusinessInfoVC") as! BusinessInfoVC
                 toVC.oneProduct = oneProduct
                 toVC.modalPresentationStyle = .fullScreen
                 self.navigationController?.pushViewController(toVC, animated: true)
             } else {
                 self.setTransitionType(.fromLeft)
-                let toVC = self.storyboard?.instantiateViewController( withIdentifier: "BusinessInfoVC") as! BusinessInfoVC
+                let toVC = self.storyboard?.instantiateViewController( withIdentifier: "StandardInfoVC") as! StandardInfoVC
                 toVC.oneProduct = oneProduct
                 toVC.modalPresentationStyle = .fullScreen
                 self.navigationController?.pushViewController(toVC, animated: true)

@@ -86,7 +86,15 @@ class requestDetails: BaseViewController {
        }
        
        @IBAction func onClickMyProfile(_ sender: Any) {
-        self.gotoMyInfoVC(oneProduct: nil)
+        if (ShareData.user_info.membership == "1") {
+            let toVC = self.storyboard?.instantiateViewController(withIdentifier: "BusinessInfoVC") as! BusinessInfoVC
+            toVC.modalPresentationStyle = .fullScreen
+            self.present(toVC, animated: true, completion: nil)
+        } else {
+            let toVC = self.storyboard?.instantiateViewController(withIdentifier: "StandardInfoVC") as! StandardInfoVC
+            toVC.modalPresentationStyle = .fullScreen
+            self.present(toVC, animated: true, completion: nil)
+        }
        }
        
     

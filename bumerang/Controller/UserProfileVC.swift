@@ -218,7 +218,16 @@ class UserProfileVC: BaseViewController {
     }
     
     @IBAction func onTapedBack(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true)
+        
+        if (ShareData.user_info.membership == "1") {
+            let toVC = storyboard?.instantiateViewController(withIdentifier: "BusinessInfoVC") as! BusinessInfoVC
+            toVC.modalPresentationStyle = .fullScreen
+            self.present(toVC, animated: true, completion: nil)
+        } else {
+            let toVC = storyboard?.instantiateViewController(withIdentifier: "StandardInfoVC") as! StandardInfoVC
+            toVC.modalPresentationStyle = .fullScreen
+            self.present(toVC, animated: true, completion: nil)
+        }
     }
     //MARK:- image choose from camera
        func openCamera(){

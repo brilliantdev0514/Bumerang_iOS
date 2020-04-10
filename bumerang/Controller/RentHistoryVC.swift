@@ -190,7 +190,15 @@ class RentHistoryVC: BaseViewController {
     
     @IBAction func onClickMyProfile(_ sender: Any) {     //  self.gotoNavigationScreen("UserInfoVC", direction: .fromLeft)
         self.navigationController?.navigationBar.isHidden = true
-        self.gotoMyInfoVC(oneProduct: nil)
+        if (ShareData.user_info.membership == "1") {
+            let toVC = self.storyboard?.instantiateViewController(withIdentifier: "BusinessInfoVC") as! BusinessInfoVC
+            toVC.modalPresentationStyle = .fullScreen
+            self.present(toVC, animated: true, completion: nil)
+        } else {
+            let toVC = self.storyboard?.instantiateViewController(withIdentifier: "StandardInfoVC") as! StandardInfoVC
+            toVC.modalPresentationStyle = .fullScreen
+            self.present(toVC, animated: true, completion: nil)
+        }
     }
     
 }
