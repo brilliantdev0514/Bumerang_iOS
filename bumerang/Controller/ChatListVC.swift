@@ -11,6 +11,7 @@ import SwiftyUserDefaults
 import FirebaseAuth
 import Firebase
 import FirebaseDatabase
+import Foundation
 class ChatListVC: BaseViewController, ChatListCellDelegate{
     
     
@@ -41,11 +42,7 @@ class ChatListVC: BaseViewController, ChatListCellDelegate{
                 let receivedId = cell.entity.senderId
                 let room_id = "\(uid)_\(receivedId)"
                 Database.database().reference().child("message").child(room_id).removeValue()
-                
-                //here; model reload
-                self.loadListdata()
-                
-                self.viewDidLoad()
+                self.gotoNavigationScreen("ChatListNav")
             }))
             alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
     
@@ -90,32 +87,36 @@ class ChatListVC: BaseViewController, ChatListCellDelegate{
                 
                 print(data)
                 for data2 in data.children.allObjects as! [DataSnapshot] {
-                    
-                    
-                    if let data2 = data2.value as? [String: AnyObject] {
+                    let key = data.key
+                    let myId = key.components(separatedBy: "_")[0]
+                    if myId == uid {
+                        if let data2 = data2.value as? [String: AnyObject] {
+                                                    
+                                    var bIsSame = false
+                                    for chatRoomModel in self.chatlistData {
+                                        
+                                        if data2["name"] as? String != nil && chatRoomModel.username ==  data2["name"] as? String {
                                             
-                            var bIsSame = false
-                            for chatRoomModel in self.chatlistData {
-                                
-                                if data2["name"] as? String != nil && chatRoomModel.username ==  data2["name"] as? String {
+                                            bIsSame = true;
+                                            break
+                                        }
+                                    }
                                     
-                                    bIsSame = true;
-                                    break
-                                }
-                            }
-                            
-                            if (!bIsSame) {
+                                    if (!bIsSame) {
+                                        
+                                        let objFirt = ChatListModel.parseMessageData(ary: NSArray(object: data2)).object(at: 0)
+                                        if data2["name"]as? String != (ShareData.user_info.first_name + " " + ShareData.user_info.last_name)
+                                        {
+                                            self.chatlistData.append(objFirt as! ChatListModel)
+                                            
+                                        }
+                                    }
                                 
-                                let objFirt = ChatListModel.parseMessageData(ary: NSArray(object: data2)).object(at: 0)
-                                if data2["name"]as? String != (ShareData.user_info.first_name + " " + ShareData.user_info.last_name)
-                                {
-                                    self.chatlistData.append(objFirt as! ChatListModel)
-                                    
-                                }
                             }
-                        
+                        }
                     }
-                }
+                    
+                    
                 
             }
             
