@@ -1018,7 +1018,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PCX-X5-9NS">
-                                                <rect key="frame" x="30" y="0.0" width="260" height="613.5"/>
+                                                <rect key="frame" x="30" y="0.0" width="260" height="553.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPH-4W-Dip">
                                                         <rect key="frame" x="0.0" y="0.0" width="260" height="173.5"/>
@@ -1068,7 +1068,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hh-fV-5R4">
-                                                                <rect key="frame" x="55" y="114" width="86" height="32"/>
+                                                                <rect key="frame" x="55" y="115" width="79" height="30"/>
                                                                 <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                 <state key="normal" title="Beni hatırla">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1143,7 +1143,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRh-ax-wZk" customClass="dropShadowDarkButton" customModule="bumerang" customModuleProvider="target">
-                                                                <rect key="frame" x="15" y="153.5" width="230" height="40"/>
+                                                                <rect key="frame" x="15" y="152.5" width="230" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="6Wh-IG-ub6"/>
                                                                 </constraints>
@@ -1243,7 +1243,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mre-vr-1Vb" userLabel="Doyou">
-                                                        <rect key="frame" x="0.0" y="403.5" width="260" height="120"/>
+                                                        <rect key="frame" x="0.0" y="403.5" width="260" height="60"/>
                                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="13"/>
                                                         <state key="normal" image="noaccount">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1253,7 +1253,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hn-gM-HAc">
-                                                        <rect key="frame" x="0.0" y="538.5" width="260" height="30"/>
+                                                        <rect key="frame" x="0.0" y="478.5" width="260" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="ui1-Ht-MqL"/>
                                                         </constraints>
@@ -1263,7 +1263,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                         </state>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dr-OD-fO9">
-                                                        <rect key="frame" x="0.0" y="583.5" width="260" height="30"/>
+                                                        <rect key="frame" x="0.0" y="523.5" width="260" height="30"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="DGK-rZ-lRs"/>
@@ -13142,7 +13142,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZJ-bJ-CEu" userLabel="mainView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="735"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="730"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ruq-Ox-s1V" userLabel="titleView">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -13189,19 +13189,19 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1b-8w-Tg5" userLabel="PersonCaptanView">
-                                                <rect key="frame" x="15" y="90" width="384" height="60"/>
+                                                <rect key="frame" x="15" y="90" width="384" height="57.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjx-cl-zre" userLabel="Person">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="57.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kişi Kapasitesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce1-xP-XEC" userLabel="personLbl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1w1-UJ-4wK" userLabel="personTxt">
-                                                                <rect key="frame" x="0.0" y="25" width="187" height="35"/>
+                                                                <rect key="frame" x="0.0" y="22.5" width="187" height="35"/>
                                                                 <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="5jQ-SP-jPI"/>
@@ -13233,16 +13233,16 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="db3-Yt-ciz" userLabel="Captan">
-                                                        <rect key="frame" x="197" y="0.0" width="187" height="60"/>
+                                                        <rect key="frame" x="197" y="0.0" width="187" height="57.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Captan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9o-k2-dMM" userLabel="captanLbl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UWF-O6-619" userLabel="captanTxt" customClass="DropDown" customModule="bumerang" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="25" width="187" height="35"/>
+                                                                <rect key="frame" x="0.0" y="22.5" width="187" height="35"/>
                                                                 <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="zbS-ru-wkn"/>
@@ -13291,10 +13291,10 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wh0-4c-YOL" userLabel="priceView">
-                                                <rect key="frame" x="0.0" y="155" width="414" height="80"/>
+                                                <rect key="frame" x="0.0" y="152.5" width="414" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiyat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY3-wt-iE5" userLabel="priceLbl">
-                                                        <rect key="frame" x="15" y="10" width="37" height="35"/>
+                                                        <rect key="frame" x="15" y="10" width="31.5" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="Mh6-bo-lkh"/>
                                                         </constraints>
@@ -13323,10 +13323,10 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09a-5w-qC3" userLabel="radioView">
-                                                        <rect key="frame" x="57" y="10" width="342" height="35"/>
+                                                        <rect key="frame" x="51.5" y="10" width="347.5" height="35"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkx-q1-ztY" userLabel="hourView">
-                                                                <rect key="frame" x="80.5" y="0.0" width="77.5" height="35"/>
+                                                                <rect key="frame" x="98" y="0.0" width="73.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2R-le-Zei" userLabel="hourRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -13343,7 +13343,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISk-fy-N5n" userLabel="hourBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="50" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="46" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Hourly">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -13364,7 +13364,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1B5-cz-lRX" userLabel="dayView">
-                                                                <rect key="frame" x="163" y="0.0" width="81.5" height="35"/>
+                                                                <rect key="frame" x="176.5" y="0.0" width="78.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="777-9z-5m4" userLabel="dayRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -13381,7 +13381,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRS-zL-mXL" userLabel="dayBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="54" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="51" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Günlük">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -13402,7 +13402,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Xg-Zk-1YH" userLabel="weekView">
-                                                                <rect key="frame" x="256.5" y="0.0" width="85.5" height="35"/>
+                                                                <rect key="frame" x="267" y="0.0" width="80.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiY-iB-oNm" userLabel="weekRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -13419,7 +13419,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIe-Y7-M8Y" userLabel="weekBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="58" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="53" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Haftalık">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -13469,16 +13469,16 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxq-PL-5o9" userLabel="DescriptionView">
-                                                <rect key="frame" x="15" y="250" width="384" height="53"/>
+                                                <rect key="frame" x="15" y="247.5" width="384" height="50.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ürün Açıklaması" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlu-gf-SYs" userLabel="DescriptionLbl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="17.5"/>
                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ctl-m3-Bw5" userLabel="DescTxtview">
-                                                        <rect key="frame" x="0.0" y="20" width="384" height="33"/>
+                                                        <rect key="frame" x="0.0" y="17.5" width="384" height="33"/>
                                                         <color key="backgroundColor" red="0.94509803921568625" green="0.94901960784313721" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -13507,7 +13507,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeZ-rJ-QXi" userLabel="productImgView">
-                                                <rect key="frame" x="15" y="313" width="384" height="216"/>
+                                                <rect key="frame" x="15" y="308" width="384" height="216"/>
                                                 <subviews>
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aDu-p1-PY4">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="216"/>
@@ -13580,7 +13580,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FHQ-aN-wuJ">
-                                                <rect key="frame" x="10" y="550" width="394" height="65"/>
+                                                <rect key="frame" x="10" y="545" width="394" height="65"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoL-2t-OUH">
                                                         <rect key="frame" x="0.0" y="0.0" width="57.5" height="65"/>
@@ -13648,7 +13648,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pif-VD-iVe" userLabel="uploadBut">
-                                                <rect key="frame" x="103.5" y="680" width="207" height="35"/>
+                                                <rect key="frame" x="103.5" y="675" width="207" height="35"/>
                                                 <color key="backgroundColor" name="redColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="8IQ-CS-O7I"/>
@@ -13673,7 +13673,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="di1-AT-6Uq" userLabel="mapView">
-                                                <rect key="frame" x="15" y="625" width="384" height="44"/>
+                                                <rect key="frame" x="15" y="620" width="384" height="44"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Konum Ekle" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9kW-k8-P0X">
                                                         <rect key="frame" x="0.0" y="5" width="384" height="34"/>
@@ -13800,7 +13800,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rye-Zy-rjY" userLabel="mainView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="794"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="786.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZD-GC-X9s" userLabel="1titleView">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -13847,19 +13847,19 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOA-yw-6O3" userLabel="2GenderSizeView">
-                                                <rect key="frame" x="15" y="85" width="384" height="60"/>
+                                                <rect key="frame" x="15" y="85" width="384" height="57.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAz-Bc-YyF" userLabel="gender">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="57.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cinsiyet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bV-cZ-YBQ" userLabel="genderLbl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ba6-m0-w08" userLabel="genderTxt" customClass="DropDown" customModule="bumerang" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="25" width="187" height="35"/>
+                                                                <rect key="frame" x="0.0" y="22.5" width="187" height="35"/>
                                                                 <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="DTu-wB-oFV"/>
@@ -13891,16 +13891,16 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xc-pa-5hc" userLabel="size">
-                                                        <rect key="frame" x="207" y="0.0" width="177" height="60"/>
+                                                        <rect key="frame" x="207" y="0.0" width="177" height="57.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9VN-vb-0jn" userLabel="sizeLbl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="177" height="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="177" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BZC-2r-ohd" userLabel="sizeTxt" customClass="DropDown" customModule="bumerang" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="25" width="177" height="35"/>
+                                                                <rect key="frame" x="0.0" y="22.5" width="177" height="35"/>
                                                                 <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="Iql-pw-eyN"/>
@@ -13949,19 +13949,19 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAA-4G-ynD" userLabel="3colorView">
-                                                <rect key="frame" x="15" y="150" width="384" height="60"/>
+                                                <rect key="frame" x="15" y="147.5" width="384" height="57.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzu-I4-aFN" userLabel="color">
-                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="187" height="57.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Renk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaB-X5-jBs" userLabel="colorLbl">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dpm-iq-C8r" userLabel="colorTxt" customClass="DropDown" customModule="bumerang" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="25" width="187" height="35"/>
+                                                                <rect key="frame" x="0.0" y="22.5" width="187" height="35"/>
                                                                 <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="gHM-xp-h8J"/>
@@ -14003,10 +14003,10 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZH-x8-Bm6" userLabel="4priceView">
-                                                <rect key="frame" x="0.0" y="215" width="414" height="80"/>
+                                                <rect key="frame" x="0.0" y="210" width="414" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiyat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ya-6d-WfF" userLabel="priceLbl">
-                                                        <rect key="frame" x="15" y="10" width="37" height="35"/>
+                                                        <rect key="frame" x="15" y="10" width="31.5" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="6lQ-VK-T8W"/>
                                                         </constraints>
@@ -14035,10 +14035,10 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="img-P2-zT6" userLabel="radioView">
-                                                        <rect key="frame" x="52" y="10" width="347" height="35"/>
+                                                        <rect key="frame" x="46.5" y="10" width="352.5" height="35"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwn-Tm-HdF" userLabel="dailyView">
-                                                                <rect key="frame" x="84.5" y="0.0" width="81.5" height="35"/>
+                                                                <rect key="frame" x="101" y="0.0" width="78.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xx8-9q-VQV" userLabel="dailyRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -14055,7 +14055,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="515-n1-P8K" userLabel="dailyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="54" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="51" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Günlük">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -14076,7 +14076,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBG-EZ-RqY" userLabel="weeklyView">
-                                                                <rect key="frame" x="171" y="0.0" width="85.5" height="35"/>
+                                                                <rect key="frame" x="184.5" y="0.0" width="80.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UnR-pP-7PX" userLabel="weeklyRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -14093,7 +14093,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rU-K2-S2g" userLabel="weeklyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="58" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="53" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Haftalık">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -14114,7 +14114,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgF-dK-Wpy" userLabel="monthView">
-                                                                <rect key="frame" x="268.5" y="0.0" width="63.5" height="35"/>
+                                                                <rect key="frame" x="277" y="0.0" width="60.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXL-2d-6dU" userLabel="monthRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -14131,7 +14131,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpu-28-6op" userLabel="MonthlyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="36" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="33" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Aylık">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -14181,16 +14181,16 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEv-ua-5kp" userLabel="5DescriptionView">
-                                                <rect key="frame" x="15" y="300" width="384" height="53"/>
+                                                <rect key="frame" x="15" y="295" width="384" height="50.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ürün Açıklaması" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLk-YG-8vp" userLabel="DescriptionLbl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="17.5"/>
                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OCH-67-90Z" userLabel="DescTxtview">
-                                                        <rect key="frame" x="0.0" y="20" width="384" height="33"/>
+                                                        <rect key="frame" x="0.0" y="17.5" width="384" height="33"/>
                                                         <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -14219,7 +14219,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6L5-bE-FcY" userLabel="6productImgView">
-                                                <rect key="frame" x="15" y="358" width="384" height="216"/>
+                                                <rect key="frame" x="15" y="350.5" width="384" height="216"/>
                                                 <subviews>
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hfc-Df-zhE">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="216"/>
@@ -14289,7 +14289,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bBN-Fd-B7D">
-                                                <rect key="frame" x="10" y="594" width="394" height="65"/>
+                                                <rect key="frame" x="10" y="586.5" width="394" height="65"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWT-JK-SfD">
                                                         <rect key="frame" x="0.0" y="0.0" width="57.5" height="65"/>
@@ -14357,7 +14357,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTs-89-9aw" userLabel="uploadBut">
-                                                <rect key="frame" x="103.5" y="739" width="207" height="35"/>
+                                                <rect key="frame" x="103.5" y="731.5" width="207" height="35"/>
                                                 <color key="backgroundColor" name="redColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="wUk-1Z-EcC"/>
@@ -14382,7 +14382,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3I-YW-ERb" userLabel="mapView">
-                                                <rect key="frame" x="15" y="675" width="384" height="44"/>
+                                                <rect key="frame" x="15" y="667.5" width="384" height="44"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Konum Ekle" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bxf-Qa-d97">
                                                         <rect key="frame" x="0.0" y="5" width="384" height="34"/>
@@ -14513,7 +14513,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UqT-gt-tiP" userLabel="mainView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="797.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFe-n5-r9g" userLabel="1titleView">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -14560,16 +14560,16 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sm7-kb-gTW" userLabel="2DescriptionView">
-                                                <rect key="frame" x="15" y="85" width="384" height="53"/>
+                                                <rect key="frame" x="15" y="85" width="384" height="50.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ürün Açıklaması" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pj3-CO-090" userLabel="DescriptionLbl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="17.5"/>
                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vNe-Ks-HjU" userLabel="DescTxtview">
-                                                        <rect key="frame" x="0.0" y="20" width="384" height="33"/>
+                                                        <rect key="frame" x="0.0" y="17.5" width="384" height="33"/>
                                                         <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -14598,10 +14598,10 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RmC-ej-kmW" userLabel="3priceView">
-                                                <rect key="frame" x="0.0" y="143" width="414" height="80"/>
+                                                <rect key="frame" x="0.0" y="140.5" width="414" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiyat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGy-Jt-PSe" userLabel="priceLbl">
-                                                        <rect key="frame" x="15" y="10" width="37" height="35"/>
+                                                        <rect key="frame" x="15" y="10" width="31.5" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="1yv-f5-YdG"/>
                                                         </constraints>
@@ -14630,10 +14630,10 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kBZ-Vc-Jka" userLabel="radioView">
-                                                        <rect key="frame" x="52" y="10" width="347" height="35"/>
+                                                        <rect key="frame" x="46.5" y="10" width="352.5" height="35"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0C-yB-ytE" userLabel="dailyView">
-                                                                <rect key="frame" x="84.5" y="0.0" width="81.5" height="35"/>
+                                                                <rect key="frame" x="101" y="0.0" width="78.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwX-Ri-Fur" userLabel="dailyRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -14650,7 +14650,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFv-wo-LEl" userLabel="dailyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="54" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="51" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Günlük">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -14671,7 +14671,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQ1-k1-WhP" userLabel="weeklyView">
-                                                                <rect key="frame" x="171" y="0.0" width="85.5" height="35"/>
+                                                                <rect key="frame" x="184.5" y="0.0" width="80.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yoq-0a-ffC" userLabel="weeklyRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -14688,7 +14688,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znP-by-LBV" userLabel="weeklyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="58" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="53" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Haftalık">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -14709,7 +14709,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaD-Eh-Wc2" userLabel="monthView">
-                                                                <rect key="frame" x="268.5" y="0.0" width="63.5" height="35"/>
+                                                                <rect key="frame" x="277" y="0.0" width="60.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m52-yr-ReN" userLabel="monthRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -14726,7 +14726,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwE-vm-AaE" userLabel="MonthlyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="36" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="33" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Aylık">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -14776,7 +14776,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDY-QE-uR5" userLabel="4productImgView">
-                                                <rect key="frame" x="15" y="233" width="384" height="216"/>
+                                                <rect key="frame" x="15" y="230.5" width="384" height="216"/>
                                                 <subviews>
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WT4-E3-Fx3">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="216"/>
@@ -14849,7 +14849,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="096-bp-Fzz">
-                                                <rect key="frame" x="10" y="480" width="394" height="65"/>
+                                                <rect key="frame" x="10" y="477.5" width="394" height="65"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNL-mR-ajG">
                                                         <rect key="frame" x="0.0" y="0.0" width="57.5" height="65"/>
@@ -14917,7 +14917,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTx-7q-FnX" userLabel="uploadBut">
-                                                <rect key="frame" x="103.5" y="630" width="207" height="35"/>
+                                                <rect key="frame" x="103.5" y="627.5" width="207" height="35"/>
                                                 <color key="backgroundColor" name="redColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="tCM-ns-8It"/>
@@ -14942,7 +14942,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJl-LZ-p2K" userLabel="mapView">
-                                                <rect key="frame" x="15" y="560" width="384" height="44"/>
+                                                <rect key="frame" x="15" y="557.5" width="384" height="44"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Konum Ekle" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7w-t4-S1L">
                                                         <rect key="frame" x="0.0" y="5" width="384" height="34"/>
@@ -15063,7 +15063,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0If-FE-ULa" userLabel="mainView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="666.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvo-bY-W6u" userLabel="1titleView">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -15110,16 +15110,16 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovF-C8-iWU" userLabel="2DescriptionView">
-                                                <rect key="frame" x="15" y="85" width="384" height="53"/>
+                                                <rect key="frame" x="15" y="85" width="384" height="50.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ürün Açıklaması" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OM-kl-ag3" userLabel="DescriptionLbl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="17.5"/>
                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s9q-wu-2du" userLabel="DescTxtview">
-                                                        <rect key="frame" x="0.0" y="20" width="384" height="33"/>
+                                                        <rect key="frame" x="0.0" y="17.5" width="384" height="33"/>
                                                         <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -15148,10 +15148,10 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgH-1T-91R" userLabel="3priceView">
-                                                <rect key="frame" x="0.0" y="143" width="414" height="80"/>
+                                                <rect key="frame" x="0.0" y="140.5" width="414" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiyat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2j-zJ-2hi" userLabel="priceLbl">
-                                                        <rect key="frame" x="15" y="10" width="37" height="35"/>
+                                                        <rect key="frame" x="15" y="10" width="31.5" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="Hmp-Pj-KtU"/>
                                                         </constraints>
@@ -15180,10 +15180,10 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfa-7R-lM8" userLabel="radioView">
-                                                        <rect key="frame" x="52" y="10" width="347" height="35"/>
+                                                        <rect key="frame" x="46.5" y="10" width="352.5" height="35"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJ2-xq-tuF" userLabel="dailyView">
-                                                                <rect key="frame" x="84.5" y="0.0" width="81.5" height="35"/>
+                                                                <rect key="frame" x="101" y="0.0" width="78.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="425-jA-MX4" userLabel="dailyRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -15200,7 +15200,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qh-u0-Qfi" userLabel="dailyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="54" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="51" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Günlük">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -15221,7 +15221,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIr-vU-nFW" userLabel="weeklyView">
-                                                                <rect key="frame" x="171" y="0.0" width="85.5" height="35"/>
+                                                                <rect key="frame" x="184.5" y="0.0" width="80.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUP-r6-M0z" userLabel="weeklyRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -15238,7 +15238,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9X-tW-cA4" userLabel="weeklyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="58" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="53" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Haftalık">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -15259,7 +15259,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrl-KI-LKx" userLabel="monthView">
-                                                                <rect key="frame" x="268.5" y="0.0" width="63.5" height="35"/>
+                                                                <rect key="frame" x="277" y="0.0" width="60.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZnU-SF-STJ" userLabel="monthRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -15276,7 +15276,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMn-n2-wTk" userLabel="MonthlyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="36" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="33" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Aylık">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -15326,7 +15326,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CUt-GU-JQC" userLabel="4productImgView">
-                                                <rect key="frame" x="15" y="233" width="384" height="216"/>
+                                                <rect key="frame" x="15" y="230.5" width="384" height="216"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vyt-RK-ReY">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="216"/>
@@ -15399,7 +15399,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hbI-Ih-ZaB">
-                                                <rect key="frame" x="10" y="475" width="394" height="65"/>
+                                                <rect key="frame" x="10" y="472.5" width="394" height="65"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-cJ-RX7">
                                                         <rect key="frame" x="0.0" y="0.0" width="57.5" height="65"/>
@@ -15467,7 +15467,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfY-5o-koE" userLabel="mapView">
-                                                <rect key="frame" x="15" y="550" width="384" height="44"/>
+                                                <rect key="frame" x="15" y="547.5" width="384" height="44"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Konum Ekle" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="108-T9-vWT">
                                                         <rect key="frame" x="0.0" y="5" width="384" height="34"/>
@@ -15510,7 +15510,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLH-PQ-cJr" userLabel="uploadBut">
-                                                <rect key="frame" x="103.5" y="614" width="207" height="35"/>
+                                                <rect key="frame" x="103.5" y="611.5" width="207" height="35"/>
                                                 <color key="backgroundColor" name="redColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Qqd-hd-xPv"/>
@@ -15614,7 +15614,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BfA-qj-DNa" userLabel="mainView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="666.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F80-8R-eZg" userLabel="1titleView">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -15661,16 +15661,16 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhb-WU-fbM" userLabel="2DescriptionView">
-                                                <rect key="frame" x="15" y="85" width="384" height="53"/>
+                                                <rect key="frame" x="15" y="85" width="384" height="50.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ürün Açıklaması" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL6-RH-PH8" userLabel="DescriptionLbl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="17.5"/>
                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9oq-R2-bAr" userLabel="DescTxtview">
-                                                        <rect key="frame" x="0.0" y="20" width="384" height="33"/>
+                                                        <rect key="frame" x="0.0" y="17.5" width="384" height="33"/>
                                                         <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -15699,10 +15699,10 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Buc-XE-K06" userLabel="3priceView">
-                                                <rect key="frame" x="0.0" y="143" width="414" height="80"/>
+                                                <rect key="frame" x="0.0" y="140.5" width="414" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiyat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRk-DZ-yTc" userLabel="priceLbl">
-                                                        <rect key="frame" x="15" y="10" width="37" height="35"/>
+                                                        <rect key="frame" x="15" y="10" width="31.5" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="DAV-UV-L3E"/>
                                                         </constraints>
@@ -15731,10 +15731,10 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdK-Hb-Jzs" userLabel="radioView">
-                                                        <rect key="frame" x="52" y="10" width="347" height="35"/>
+                                                        <rect key="frame" x="46.5" y="10" width="352.5" height="35"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ha7-6T-Vkp" userLabel="dailyView">
-                                                                <rect key="frame" x="84.5" y="0.0" width="81.5" height="35"/>
+                                                                <rect key="frame" x="101" y="0.0" width="78.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-tx-cBo" userLabel="dailyRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -15751,7 +15751,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dl2-jp-Bf8" userLabel="dailyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="54" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="51" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Günlük">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -15772,7 +15772,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQx-ZO-T84" userLabel="weeklyView">
-                                                                <rect key="frame" x="171" y="0.0" width="85.5" height="35"/>
+                                                                <rect key="frame" x="184.5" y="0.0" width="80.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGj-Ka-tSU" userLabel="weeklyRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -15789,7 +15789,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7e-Ns-PDn" userLabel="weeklyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="58" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="53" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Haftalık">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -15810,7 +15810,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dh5-mN-DOV" userLabel="monthView">
-                                                                <rect key="frame" x="268.5" y="0.0" width="63.5" height="35"/>
+                                                                <rect key="frame" x="277" y="0.0" width="60.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Kv-UY-TRX" userLabel="monthRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -15827,7 +15827,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUc-1X-So9" userLabel="MonthlyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="36" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="33" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Aylık">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -15877,7 +15877,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfF-nh-7Ca" userLabel="4productImgView">
-                                                <rect key="frame" x="15" y="233" width="384" height="216"/>
+                                                <rect key="frame" x="15" y="230.5" width="384" height="216"/>
                                                 <subviews>
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FWY-b8-Kan">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="216"/>
@@ -15950,7 +15950,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1aL-b2-8PC">
-                                                <rect key="frame" x="10" y="475" width="394" height="65"/>
+                                                <rect key="frame" x="10" y="472.5" width="394" height="65"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG0-fS-old">
                                                         <rect key="frame" x="0.0" y="0.0" width="57.5" height="65"/>
@@ -16018,7 +16018,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Je8-Tn-96K" userLabel="uploadBut">
-                                                <rect key="frame" x="103.5" y="614" width="207" height="35"/>
+                                                <rect key="frame" x="103.5" y="611.5" width="207" height="35"/>
                                                 <color key="backgroundColor" name="redColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="tu9-dU-yV6"/>
@@ -16042,7 +16042,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wY-V3-Ocs" userLabel="mapView">
-                                                <rect key="frame" x="15" y="550" width="384" height="44"/>
+                                                <rect key="frame" x="15" y="547.5" width="384" height="44"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Konum Ekle" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SmD-om-pnn">
                                                         <rect key="frame" x="0.0" y="5" width="384" height="34"/>
@@ -16713,7 +16713,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oP1-mK-6vE" userLabel="mainView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="666.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKZ-nb-8fT" userLabel="1titleView">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
@@ -16760,16 +16760,16 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4S-Lh-loX" userLabel="2DescriptionView">
-                                                <rect key="frame" x="15" y="85" width="384" height="53"/>
+                                                <rect key="frame" x="15" y="85" width="384" height="50.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ürün Açıklaması" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRa-q3-sjN" userLabel="DescriptionLbl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="17.5"/>
                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="410-vI-Kcz" userLabel="DescTxtview">
-                                                        <rect key="frame" x="0.0" y="20" width="384" height="33"/>
+                                                        <rect key="frame" x="0.0" y="17.5" width="384" height="33"/>
                                                         <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -16798,10 +16798,10 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiS-X3-aLn" userLabel="3priceView">
-                                                <rect key="frame" x="0.0" y="143" width="414" height="80"/>
+                                                <rect key="frame" x="0.0" y="140.5" width="414" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiyat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYF-4Y-r4v" userLabel="priceLbl">
-                                                        <rect key="frame" x="15" y="10" width="37" height="35"/>
+                                                        <rect key="frame" x="15" y="10" width="31.5" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="HY4-f9-PZf"/>
                                                         </constraints>
@@ -16830,10 +16830,10 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oe4-cD-7NG" userLabel="radioView">
-                                                        <rect key="frame" x="52" y="10" width="347" height="35"/>
+                                                        <rect key="frame" x="46.5" y="10" width="352.5" height="35"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMp-z3-LFW" userLabel="dailyView">
-                                                                <rect key="frame" x="84.5" y="0.0" width="81.5" height="35"/>
+                                                                <rect key="frame" x="101" y="0.0" width="78.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5Z-sO-4dP" userLabel="dailyRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -16850,7 +16850,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="po1-I2-Cr7" userLabel="dailyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="54" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="51" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Günlük">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -16871,7 +16871,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xR-9d-X9Z" userLabel="weeklyView">
-                                                                <rect key="frame" x="171" y="0.0" width="85.5" height="35"/>
+                                                                <rect key="frame" x="184.5" y="0.0" width="80.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZ4-OM-vdI" userLabel="weeklyRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -16888,7 +16888,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTm-DI-zIZ" userLabel="weeklyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="58" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="53" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Haftalık">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -16909,7 +16909,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwE-6x-gwq" userLabel="monthView">
-                                                                <rect key="frame" x="268.5" y="0.0" width="63.5" height="35"/>
+                                                                <rect key="frame" x="277" y="0.0" width="60.5" height="35"/>
                                                                 <subviews>
                                                                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0B4-iF-9EM" userLabel="monthRad" customClass="GDCheckbox" customModule="GDCheckbox">
                                                                         <rect key="frame" x="0.0" y="9" width="17.5" height="17.5"/>
@@ -16926,7 +16926,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                         </connections>
                                                                     </view>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9db-qB-LzR" userLabel="MonthlyBut">
-                                                                        <rect key="frame" x="22.5" y="1.5" width="36" height="32"/>
+                                                                        <rect key="frame" x="22.5" y="2.5" width="33" height="30"/>
                                                                         <fontDescription key="fontDescription" name="Arial-Rounded" family="Arial-Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Aylık">
                                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -16976,7 +16976,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PwR-qZ-aR9" userLabel="4productImgView">
-                                                <rect key="frame" x="15" y="233" width="384" height="216"/>
+                                                <rect key="frame" x="15" y="230.5" width="384" height="216"/>
                                                 <subviews>
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ja-6u-lTD">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="216"/>
@@ -17049,7 +17049,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hjq-4U-e4W">
-                                                <rect key="frame" x="10" y="470" width="394" height="65"/>
+                                                <rect key="frame" x="10" y="467.5" width="394" height="65"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntu-GA-83g">
                                                         <rect key="frame" x="0.0" y="0.0" width="57.5" height="65"/>
@@ -17117,7 +17117,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkD-XD-rYb" userLabel="uploadBut">
-                                                <rect key="frame" x="103.5" y="614" width="207" height="35"/>
+                                                <rect key="frame" x="103.5" y="611.5" width="207" height="35"/>
                                                 <color key="backgroundColor" name="redColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="gVw-xP-Nc6"/>
@@ -17142,7 +17142,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3D-7I-rFK" userLabel="mapView">
-                                                <rect key="frame" x="15" y="550" width="384" height="44"/>
+                                                <rect key="frame" x="15" y="547.5" width="384" height="44"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Konum Ekle" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="00R-Fs-C1g">
                                                         <rect key="frame" x="0.0" y="5" width="384" height="34"/>
@@ -17725,7 +17725,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                                         <constraint firstAttribute="height" constant="25" id="LYQ-xP-b3B"/>
                                                                                     </constraints>
                                                                                     <connections>
-                                                                                        <action selector="handleGesture:" destination="CCM-fB-Ccd" eventType="touchUpInside" id="XJA-So-Rhi"/>
+                                                                                        <action selector="btnCloseTappedWithSender:" destination="ptv-Ny-RuR" eventType="touchUpInside" id="3i7-vH-mSh"/>
                                                                                     </connections>
                                                                                 </button>
                                                                             </subviews>

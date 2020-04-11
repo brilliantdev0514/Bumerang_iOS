@@ -11,7 +11,9 @@ import SwiftyUserDefaults
 import FirebaseAuth
 import Firebase
 import FirebaseDatabase
-class ChatListVC: BaseViewController {
+class ChatListVC: BaseViewController, ChatListCellDelegate{
+    
+    
 
     let databaseChats = Constants.refs.databaseRoot.child("Bumerang_chat")
     var chatlistData = [ChatListModel]()
@@ -30,7 +32,25 @@ class ChatListVC: BaseViewController {
         
         
     }
-
+    //MARK:- trashBtnPressed function!
+    func btnCloseTapped(cell: ChatListCell) {
+                let alertController = UIAlertController(title: nil, message:
+                    "Are you sure delete?", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: {(action) -> Void in
+                let uid = Auth.auth().currentUser!.uid
+                let receivedId = cell.entity.senderId
+                let room_id = "\(uid)_\(receivedId)"
+                Database.database().reference().child("message").child(room_id).removeValue()
+                
+                //here; model reload
+                self.loadListdata()
+                
+                self.viewDidLoad()
+            }))
+            alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
+    
+                self.present(alertController, animated: true, completion: nil)
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = false
@@ -88,7 +108,10 @@ class ChatListVC: BaseViewController {
                                 
                                 let objFirt = ChatListModel.parseMessageData(ary: NSArray(object: data2)).object(at: 0)
                                 if data2["name"]as? String != (ShareData.user_info.first_name + " " + ShareData.user_info.last_name)
-                                {self.chatlistData.append(objFirt as! ChatListModel)}
+                                {
+                                    self.chatlistData.append(objFirt as! ChatListModel)
+                                    
+                                }
                             }
                         
                     }
@@ -151,12 +174,11 @@ class ChatListVC: BaseViewController {
     @IBAction func handleGesture(_ sender: Any) {
         if (sender as AnyObject).state == UIGestureRecognizer.State.began
         {
+            
                 let alertController = UIAlertController(title: nil, message:
                     "Are you sure delete?", preferredStyle: UIAlertController.Style.alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: {(action) -> Void in
-                
-                
-                
+               
 //                let uid = Auth.auth().currentUser!.uid
 //                let receivedId = self.entity.senderId
 //                let room_id = "\(uid)_\(receivedId)"
@@ -203,6 +225,7 @@ extension ChatListVC: UICollectionViewDelegate {
 }
 
 extension ChatListVC : UICollectionViewDataSource {
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -217,7 +240,7 @@ extension ChatListVC : UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChatListCell", for: indexPath) as! ChatListCell
         
         cell.entity = chatlistData[indexPath.row]
-        cell.ui_trash.tag = indexPath.row
+        cell.delegate = self
         
         return cell
     }

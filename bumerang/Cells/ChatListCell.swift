@@ -6,6 +6,10 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
+protocol ChatListCellDelegate: AnyObject {
+    func btnCloseTapped(cell: ChatListCell)
+}
+
 class ChatListCell: UICollectionViewCell {
     
     @IBOutlet weak var ui_avartarImg: UIImageView!
@@ -15,7 +19,7 @@ class ChatListCell: UICollectionViewCell {
     @IBOutlet weak var ui_unreadLbl: UILabel!
     @IBOutlet weak var ui_trash: UIButton!
     
-    var btnIndex : Int = 0
+    weak var delegate: ChatListCellDelegate?
     
     var entity : ChatListModel! {
         didSet{
@@ -34,8 +38,12 @@ class ChatListCell: UICollectionViewCell {
             } else {
                 ui_unreadLbl.isHidden = true
             }
-            btnIndex = ui_trash.tag
         }
+    }
+    
+    @IBAction func btnCloseTapped(sender: AnyObject) {
+        
+        delegate?.btnCloseTapped(cell: self)
     }
 }
 
