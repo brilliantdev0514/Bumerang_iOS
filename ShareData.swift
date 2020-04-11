@@ -36,7 +36,6 @@ class ShareData: NSObject
     static var Tuserlatitude = "lat"
     static var Tuserlongitude = "lng"
     static var Tuserphotoid = "avatarUrl"
-    
     static let dbUserRef = Database.database().reference().child(ShareData.user_table)
     
     static var user_info: Users!

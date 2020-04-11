@@ -15,6 +15,7 @@ import FacebookCore
 import FBSDKLoginKit
 import Firebase
 import GoogleSignIn
+import Foundation
 
 var signinVC : SigninVC!
 
@@ -45,7 +46,6 @@ class SigninVC: BaseViewController{
     @IBOutlet weak var googlev1: UIView!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,8 +59,23 @@ class SigninVC: BaseViewController{
         
         googlev1.cornerRadius = googlev1.frame.height/2
         
+                
+        //MARK:- read from shared prefereces
+        let preferences = UserDefaults.standard
+
+        let Key = "key"
+
+        if preferences.object(forKey: Key) == nil {
+            
+        } else {
+            io_checkBox.isSelected = true
+            let value = preferences.string(forKey: Key)
+            self.ui_emailTxt.text = value?.components(separatedBy: "_")[0]
+            self.ui_pwdTxt.text = value?.components(separatedBy: "_")[1]
+        }
+//
         
-        
+            
         
         
 //        ui_emailTxt.text = ShareData.user_info.email
@@ -167,7 +182,7 @@ class SigninVC: BaseViewController{
                         Defaults[.userId] = uid
                         self?.gotoTabVC("MainpageAfterNav")
                         staticValue.registerStatus = "1"
-                        self!.setRememberState()
+//                        self!.setRememberState()
                               
                               }) { (error) in
                                 print(error.localizedDescription)
@@ -268,12 +283,6 @@ class SigninVC: BaseViewController{
     
     }
     
-    func setRememberState() {
-        
-        Defaults[.rememberState] = io_checkBox.isSelected ? "1":"0"
-        print(Defaults[.rememberState]!)
-        print(io_checkBox.isSelected)
-    }
     
 //    func gotoSigninAPI(email : String, pwd : String, auth_type : String) {
 //
@@ -331,11 +340,20 @@ class SigninVC: BaseViewController{
         //setRememberState()
     }
     
-    // chage CheckSbox tate
+    //MARK:- chage CheckSbox tate
     @IBAction func onClickCheckBox(_ sender: Any) {
-        
-        io_checkBox.isSelected = !io_checkBox.isSelected
-        print(io_checkBox.isSelected)
+        let preferences = UserDefaults.standard
+
+                let Key = "key"
+        if io_checkBox.isSelected == false {
+            io_checkBox.isSelected = true
+            let value = self.ui_emailTxt.text! + "_" + self.ui_pwdTxt.text!
+            preferences.set(value, forKey: Key)
+            
+        } else {
+            io_checkBox.isSelected = false
+            preferences.removeAll()
+        }
     }
     
     @IBAction func onClickForgot(_ sender: Any) {
