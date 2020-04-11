@@ -42,7 +42,6 @@ class ChatListVC: BaseViewController, ChatListCellDelegate{
                 let receivedId = cell.entity.senderId
                 let room_id = "\(uid)_\(receivedId)"
                 Database.database().reference().child("message").child(room_id).removeValue()
-                self.gotoNavigationScreen("ChatListNav")
             }))
             alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
     
@@ -81,6 +80,7 @@ class ChatListVC: BaseViewController, ChatListCellDelegate{
                         // handle data not found
                         return
                     }
+            self.chatlistData.removeAll()
                     
             let chatList = snapshot.children.allObjects as! [DataSnapshot]
             for data in chatList{                
@@ -123,6 +123,12 @@ class ChatListVC: BaseViewController, ChatListCellDelegate{
             //let chatData = snapshot.value as! [String: String]
         //          Users user = Users.init(dict: value)
             self.ui_chatdata_coll.reloadData()
+//            DispatchQueue.main.async {
+//                print("------------")
+//                print(self.chatlistData.count)
+//
+//            }
+            
             
             if self.chatlistData.count == 0 {
                 
