@@ -20225,7 +20225,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                     <color key="titleColor" name="black"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="didClickReportUserBtn:" destination="otX-85-IXL" eventType="touchUpInside" id="5Zc-fm-cfg"/>
+                                                    <action selector="didClickReportUserBtn:" destination="otX-85-IXL" eventType="touchUpInside" id="ayi-pV-JcY"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -20290,7 +20290,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                     <connections>
                         <outlet property="collectionHeightConstraint" destination="XRN-WN-SLK" id="pW5-92-lo5"/>
                         <outlet property="messageButton" destination="2pp-ll-XAD" id="5MZ-IZ-qMz"/>
-                        <outlet property="report_user" destination="St4-jC-Gw2" id="QYy-bm-bEx"/>
+                        <outlet property="report_user" destination="St4-jC-Gw2" id="jwH-WP-rAU"/>
                         <outlet property="settingButton" destination="lgY-pA-1YO" id="unW-pA-ESn"/>
                         <outlet property="ui_avatarImg" destination="KL1-Ef-mxf" id="oS6-SV-PbR"/>
                         <outlet property="ui_avatarView" destination="XUE-9u-Q2B" id="kGA-yL-2Pd"/>
@@ -20663,7 +20663,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                     <color key="titleColor" name="black"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="didClickReportUserBtn:" destination="207-qc-kOL" eventType="touchUpInside" id="s5I-RB-nMK"/>
+                                                    <action selector="didClickReportUserBtn:" destination="207-qc-kOL" eventType="touchUpInside" id="UTQ-th-hV4"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -20730,7 +20730,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                     <connections>
                         <outlet property="collectionHeightConstraint" destination="kax-C4-TSQ" id="IKI-MB-a7Y"/>
                         <outlet property="messageButton" destination="Cpy-7x-tOn" id="pv3-3K-jCy"/>
-                        <outlet property="report_user" destination="dru-pJ-Fwl" id="56U-BN-Plq"/>
+                        <outlet property="report_user" destination="dru-pJ-Fwl" id="ohk-eB-erb"/>
                         <outlet property="settingButton" destination="LNV-PC-bna" id="9vz-E5-5ax"/>
                         <outlet property="ui_avatarImg" destination="NfF-fx-dok" id="Dg3-kf-JmE"/>
                         <outlet property="ui_avatarView" destination="LSg-tP-KKh" id="bDH-Yd-XKw"/>

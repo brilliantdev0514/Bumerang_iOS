@@ -38,7 +38,7 @@ class StandardInfoVC: BaseViewController {
         
         self.showALLoadingViewWithTitle(title: "Loading Profile", type: .messageWithIndicator )
         
-        var uid = Auth.auth().currentUser!.uid
+        var uid : String = ""
         if oneProduct != nil {
             
             uid = oneProduct!.owner_id
@@ -52,15 +52,13 @@ class StandardInfoVC: BaseViewController {
             }
         } else {
             messageButton.removeFromSuperview()
-        }
-        
-        if Auth.auth().currentUser?.uid != "" {
-            messageButton.removeFromSuperview()
-            report_user.isHidden = true
-            setupMenuButton()
-        } else {
-            messageButton.cornerRadius = messageButton.bounds.height/2
-            settingButton.isHidden = true
+            
+            uid = Auth.auth().currentUser!.uid
+            if uid != "" {
+                messageButton.removeFromSuperview()
+                report_user.isHidden = true
+                setupMenuButton()
+            }
         }
         
         ShareData.dbUserRef.child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
