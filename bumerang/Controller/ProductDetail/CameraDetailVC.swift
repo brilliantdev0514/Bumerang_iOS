@@ -143,14 +143,14 @@ class CameraDetailVC: BaseViewController {
         
         var toVC = self.storyboard?.instantiateViewController( withIdentifier: "AddCameraVC") as! AddCameraVC
         
-        if oneProduct?.category == "8" {
+        if oneProduct?.category == "7" {
             
             let toVC = self.storyboard?.instantiateViewController( withIdentifier: "AddCameraVC") as! AddCameraVC
             toVC.oneProduct = oneProduct
             
             toVC.modalPresentationStyle = .fullScreen
             self.navigationController?.pushViewController(toVC, animated: true)
-        } else if oneProduct?.category == "7" {
+        } else if oneProduct?.category == "9" {
             
             let toVC = self.storyboard?.instantiateViewController( withIdentifier: "AddKampVC") as! AddKampVC
             toVC.oneProduct = oneProduct
@@ -158,7 +158,7 @@ class CameraDetailVC: BaseViewController {
             toVC.modalPresentationStyle = .fullScreen
             self.navigationController?.pushViewController(toVC, animated: true)
             
-        } else if oneProduct?.category == "8" {
+        } else if oneProduct?.category == "10" {
             
             let toVC = self.storyboard?.instantiateViewController( withIdentifier: "AddMusicVC") as! AddMusicVC
             toVC.oneProduct = oneProduct
@@ -166,7 +166,7 @@ class CameraDetailVC: BaseViewController {
             toVC.modalPresentationStyle = .fullScreen
             self.navigationController?.pushViewController(toVC, animated: true)
             
-        } else if oneProduct?.category == "9" {
+        } else if oneProduct?.category == "8" {
             
             let toVC = self.storyboard?.instantiateViewController( withIdentifier: "AddOtherVC") as! AddOtherVC
             toVC.oneProduct = oneProduct
