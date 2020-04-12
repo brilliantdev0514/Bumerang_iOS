@@ -75,7 +75,7 @@ class BikeDetailVC: BaseViewController {
            ProductData.dbProRef.child(oneProduct_!.product_id).updateChildValues(data)
        }else
        {
-           self.showToast("You can't edit this product description!", duration: 2, position: .center)
+           self.showToast("Bu ürün açıklamasını düzenleyemezsiniz!", duration: 2, position: .center)
        }
    }
     func loadDitailData(_ oneData : ProductModels) {
@@ -156,9 +156,9 @@ class BikeDetailVC: BaseViewController {
     }
     //MARK:- product report func
     @IBAction func didReportPro(_ sender: Any) {
-        let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "", message: "İlanı rapor et", preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {(action) -> Void in
+        alert.addAction(UIAlertAction(title: "Evet", style: .default, handler: {(action) -> Void in
             let date = Date()
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -166,15 +166,22 @@ class BikeDetailVC: BaseViewController {
             let uid = Auth.auth().currentUser!.uid
             let pro_id = self.oneProduct_!.product_id
             ProductData.rpProRef.child(pro_id!).child(uid).setValue(current_date)
-            
+            self.reportConfirm()
             self.navigationController?.popViewController(animated: true)
                        
         }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Hayır", style: .default, handler: nil))
         DispatchQueue.main.async(execute:  {
             self.present(alert, animated: true, completion: nil)
         })
 
+    }
+    
+    func reportConfirm() {
+        let alert = UIAlertController(title: "", message: "Ürünü 24 saat içinde inceleyin ve gerekli önlemleri alın.", preferredStyle: .actionSheet)
+       
+        alert.addAction(UIAlertAction(title: "Evet", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     @IBAction func onClickChat(_ sender: Any) {
         

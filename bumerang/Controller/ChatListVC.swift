@@ -36,14 +36,14 @@ class ChatListVC: BaseViewController, ChatListCellDelegate{
     //MARK:- trashBtnPressed function!
     func btnCloseTapped(cell: ChatListCell) {
                 let alertController = UIAlertController(title: nil, message:
-                    "Are you sure delete?", preferredStyle: UIAlertController.Style.alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,handler: {(action) -> Void in
+                    "Mesajı silmek istiyor musunuz?", preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: "Evet", style: UIAlertAction.Style.default,handler: {(action) -> Void in
                 let uid = Auth.auth().currentUser!.uid
                 let receivedId = cell.entity.senderId
                 let room_id = "\(uid)_\(receivedId)"
                 Database.database().reference().child("message").child(room_id).removeValue()
             }))
-            alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
+            alertController.addAction(UIAlertAction(title: "Hayır", style: UIAlertAction.Style.default, handler: nil))
     
                 self.present(alertController, animated: true, completion: nil)
     }

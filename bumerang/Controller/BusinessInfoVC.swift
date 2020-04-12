@@ -122,9 +122,9 @@ class BusinessInfoVC: BaseViewController {
         }
     //MARK:- report user function
     @IBAction func didClickReportUserBtn(_ sender: Any) {
-        let alert = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "", message: "Kullanıcıyı Rapor Et", preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: {(action) -> Void in
+        alert.addAction(UIAlertAction(title: "Evet", style: .default, handler: {(action) -> Void in
             let date = Date()
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -132,12 +132,21 @@ class BusinessInfoVC: BaseViewController {
             let uid = Auth.auth().currentUser!.uid
             let other_id = self.oneProduct!.owner_id
             Database.database().reference().child("ReportedUsers").child(other_id!).child(uid).setValue(current_date)
+            self.reportConfirm()
                        
         }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Hayır", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
 
     }
+    
+    func reportConfirm() {
+        let alert = UIAlertController(title: "", message: "Kullanıcı 24 saat içerisinde inceleyeceğiz ve gerekli önlemleri alacağız", preferredStyle: .actionSheet)
+       
+        alert.addAction(UIAlertAction(title: "Evet", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
         
 
         

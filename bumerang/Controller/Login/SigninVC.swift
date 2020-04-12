@@ -231,7 +231,7 @@ class SigninVC: BaseViewController{
                     
 //                    print("\(staticValue.registerStatus)")
                 }else {
-                    self?.showToast("You can't signin by this info!", duration: 2, position: .center)
+                    self?.showToast("Bu bilgi ile oturum açamazsınız!", duration: 2, position: .center)
                 }
               
             }
