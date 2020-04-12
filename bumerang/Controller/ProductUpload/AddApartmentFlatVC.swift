@@ -200,7 +200,7 @@ class AddApartmentFlatVC: BaseViewController {
             self.present(imagePicker, animated: true, completion: nil)
         }
         else{
-            let alert  = UIAlertController(title: "Warning", message: "You don't have camera", preferredStyle: .alert)
+            let alert  = UIAlertController(title: "Uyarı", message: "Kameran yok", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: R_EN.string.OK, style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
@@ -402,7 +402,7 @@ class AddApartmentFlatVC: BaseViewController {
             
         
         } else {
-            showToast("Upload failed!", duration: 1, position: .top)
+            showToast("Yükleme başarısız!", duration: 1, position: .top)
             return
         }
             
