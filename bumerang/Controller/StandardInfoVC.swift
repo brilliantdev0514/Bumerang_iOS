@@ -123,9 +123,9 @@ class StandardInfoVC: BaseViewController {
     
     //MARK:- report user function
     @IBAction func didClickReportUserBtn(_ sender: Any) {
-        let alert = UIAlertController(title: "", message: "Kullanıcıyı Rapor Et", preferredStyle: .alert)
+        let alert = UIAlertController(title: "", message: "Rapor / Engelle", preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Evet", style: .default, handler: {(action) -> Void in
+        alert.addAction(UIAlertAction(title: "Rapor", style: .default, handler: {(action) -> Void in
             let date = Date()
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -135,6 +135,15 @@ class StandardInfoVC: BaseViewController {
             Database.database().reference().child("ReportedUsers").child(other_id!).child(uid).setValue(current_date)
             self.reportConfirm()
                        
+        }))
+        alert.addAction(UIAlertAction(title: "Engelle", style: .default, handler: {(action) -> Void in
+            let date = Date()
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            let current_date = dateFormatter.string(from: date)
+            let my_ID = Auth.auth().currentUser!.uid
+            let other_ID = self.oneProduct!.owner_id
+            Database.database().reference().child("BlockedUsers").child(other_ID! + "_" + my_ID).setValue(current_date)
         }))
         alert.addAction(UIAlertAction(title: "Hayır", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
@@ -189,11 +198,30 @@ class StandardInfoVC: BaseViewController {
             showToast(R_EN.string.CHAT_REQUEST_FAIL_LOGIN, duration: 2, position: .center)
             
         } else {
-
-            let toVC = self.storyboard?.instantiateViewController(withIdentifier: "ChatRoomVC") as! ChatRoomVC
-            toVC.receiveUserId = oneProduct!.owner_id
-            self.modalPresentationStyle = .fullScreen
-            self.navigationController?.pushViewController(toVC, animated: true)
+            Database.database().reference().child("BlockedUsers").observeSingleEvent(of: .value, with: { (snapshot) in
+                                      // Get user value
+                                        if !snapshot.exists() {
+                                            // handle data not found
+                                            return
+                                        }
+            var groupNames = ""
+                                        for group in snapshot.children {
+                                            groupNames.append((group as AnyObject).key)
+                                        }
+                                        print(groupNames)
+            let uid = Auth.auth().currentUser!.uid
+            if (groupNames.contains(uid + "_" + self.oneProduct!.owner_id) ||
+                groupNames.contains(self.oneProduct!.owner_id + "_" + uid)) {
+                self.showToast("Kullanıcı engellendi. Yaşadığınız sorunlardan dolayı özür dileriz")
+            } else {
+                let toVC = self.storyboard?.instantiateViewController(withIdentifier: "ChatRoomVC") as! ChatRoomVC
+                toVC.receiveUserId = self.oneProduct!.owner_id
+                self.modalPresentationStyle = .fullScreen
+                self.navigationController?.pushViewController(toVC, animated: true)
+            }
+                                      }) { (error) in
+                                        print(error.localizedDescription)
+                                    }
         }
         
     }

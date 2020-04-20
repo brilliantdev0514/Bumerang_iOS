@@ -272,7 +272,7 @@ class AddKampVC: BaseViewController {
     let ownerid = Auth.auth().currentUser!.uid
     
     
-    let productDict: [String: Any] = [ProductData.title: title, ProductData.room_number: "", ProductData.heating: "", ProductData.furbished: "", ProductData.date_unit: priceType, ProductData.price: price, ProductData.deposit: "", ProductData.description: description, ProductData.address: addr, ProductData.lat: lat, ProductData.lng: lng, ProductData.zip_code: zipCode, ProductData.owner_id: ownerid, ProductData.image_url: uplodimgarray, ProductData.bed_capacity: "", ProductData.captan: "", ProductData.car_type: "", ProductData.category: "9", ProductData.color: "", ProductData.created_at: "", ProductData.door_number: "", ProductData.fuel_type: "", ProductData.gear_type: "", ProductData.gender: "", ProductData.membershipState: "", ProductData.person_capacity: "", ProductData.rental_status: "", ProductData.score: "", ProductData.size: "", ProductData.updated_at: ""]
+    let productDict: [String: Any] = [ProductData.title: title, ProductData.room_number: "", ProductData.heating: "", ProductData.furbished: "", ProductData.date_unit: priceType, ProductData.price: price, ProductData.deposit: "", ProductData.description: description, ProductData.address: addr, ProductData.lat: lat, ProductData.lng: lng, ProductData.zip_code: zipCode, ProductData.owner_id: ownerid, ProductData.image_url: uplodimgarray, ProductData.bed_capacity: "", ProductData.captan: "", ProductData.car_type: "", ProductData.category: "8", ProductData.color: "", ProductData.created_at: "", ProductData.door_number: "", ProductData.fuel_type: "", ProductData.gear_type: "", ProductData.gender: "", ProductData.membershipState: "", ProductData.person_capacity: "", ProductData.rental_status: "", ProductData.score: "", ProductData.size: "", ProductData.updated_at: ""]
            
            ProductData.dbProRef.child(oneProduct!.product_id).updateChildValues(productDict)
            
@@ -323,12 +323,12 @@ class AddKampVC: BaseViewController {
             }
         }
      @IBAction func imageUploadBtn(_ sender: UIButton) {
-            let intTag = sender.tag
-            if sender.currentImage!.isEqual(UIImage(named: "add"))
-            {
+//            let intTag = sender.tag
+//            if sender.currentImage!.isEqual(UIImage(named: "add"))
+//            {
             selectImage()
-            }
-            else{
+//            }
+//            else{
     //        guard let indexPath = self.collctnVW_imagesToUplosd.indexPathsForVisibleItems.first.flatMap({
     //            IndexPath(item: (intTag-10) , section: $0.section)
     //        }), self.collctnVW_imagesToUplosd.cellForItem(at: indexPath) != nil else {
@@ -353,7 +353,7 @@ class AddKampVC: BaseViewController {
     //
 
                 //self.collctnVW_imagesToUplosd.scrol
-            }
+//            }
         }
     }
 

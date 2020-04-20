@@ -20241,13 +20241,13 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="St4-jC-Gw2">
-                                                <rect key="frame" x="15" y="260" width="90" height="20"/>
+                                                <rect key="frame" x="40" y="250" width="30" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="bc9-Tk-3z7"/>
-                                                    <constraint firstAttribute="width" constant="90" id="f2c-v8-aQr"/>
+                                                    <constraint firstAttribute="height" constant="30" id="bc9-Tk-3z7"/>
+                                                    <constraint firstAttribute="width" constant="30" id="f2c-v8-aQr"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="8"/>
-                                                <state key="normal" title="Kullanıcıyı Rapor Et" backgroundImage="bar">
+                                                <state key="normal" backgroundImage="user_function.png">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -20281,12 +20281,12 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                             <constraint firstItem="XUE-9u-Q2B" firstAttribute="width" secondItem="XUE-9u-Q2B" secondAttribute="height" id="dx6-ek-gaV"/>
                                             <constraint firstItem="XUE-9u-Q2B" firstAttribute="top" secondItem="UCP-kB-Wwt" secondAttribute="top" constant="80" id="eUP-fW-MM2"/>
                                             <constraint firstAttribute="trailing" secondItem="lgY-pA-1YO" secondAttribute="trailing" constant="20" id="gIo-Sr-Myt"/>
+                                            <constraint firstItem="St4-jC-Gw2" firstAttribute="leading" secondItem="UCP-kB-Wwt" secondAttribute="leading" constant="40" id="jsB-7A-KAm"/>
                                             <constraint firstItem="sy4-Vw-2T1" firstAttribute="leading" secondItem="KL1-Ef-mxf" secondAttribute="trailing" constant="-10" id="m33-B6-HpA"/>
                                             <constraint firstItem="eWi-jn-Zud" firstAttribute="top" secondItem="KSJ-Jd-w9T" secondAttribute="bottom" priority="250" constant="15" id="mGv-Do-quH"/>
                                             <constraint firstItem="eWi-jn-Zud" firstAttribute="top" secondItem="2pp-ll-XAD" secondAttribute="bottom" constant="15" id="rZV-wU-3IC"/>
                                             <constraint firstItem="CPA-i2-WAS" firstAttribute="top" secondItem="UCP-kB-Wwt" secondAttribute="top" constant="10" id="t1i-rw-0vv"/>
                                             <constraint firstItem="hBw-gg-BrO" firstAttribute="top" secondItem="4lN-6B-iyi" secondAttribute="bottom" constant="15" id="vqf-2j-hmg"/>
-                                            <constraint firstItem="St4-jC-Gw2" firstAttribute="leading" secondItem="hBw-gg-BrO" secondAttribute="leading" id="xzy-RN-LUC"/>
                                             <constraint firstItem="St4-jC-Gw2" firstAttribute="bottom" secondItem="XUE-9u-Q2B" secondAttribute="bottom" id="zbw-cG-xLK"/>
                                             <constraint firstItem="qSa-nz-jSe" firstAttribute="centerY" secondItem="lgY-pA-1YO" secondAttribute="centerY" id="zhg-dq-lc2"/>
                                         </constraints>
@@ -20680,13 +20680,13 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dru-pJ-Fwl">
-                                                <rect key="frame" x="12" y="260" width="90" height="20"/>
+                                                <rect key="frame" x="40" y="250" width="30" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="4pB-J4-xCX"/>
-                                                    <constraint firstAttribute="width" constant="90" id="WJF-Zg-qh2"/>
+                                                    <constraint firstAttribute="height" constant="30" id="4pB-J4-xCX"/>
+                                                    <constraint firstAttribute="width" constant="30" id="WJF-Zg-qh2"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="8"/>
-                                                <state key="normal" title="Kullanıcıyı Rapor Et" backgroundImage="bar">
+                                                <state key="normal" backgroundImage="user_function.png">
                                                     <color key="titleColor" name="black"/>
                                                 </state>
                                                 <connections>
@@ -20698,7 +20698,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                         <constraints>
                                             <constraint firstItem="4P0-jH-dBq" firstAttribute="top" secondItem="dl2-Cg-QfY" secondAttribute="top" constant="-100" id="5Xj-Fb-elc"/>
                                             <constraint firstItem="OOf-mo-jA6" firstAttribute="top" secondItem="0e7-zP-Uhn" secondAttribute="bottom" constant="15" id="79J-g6-bPX"/>
-                                            <constraint firstItem="dru-pJ-Fwl" firstAttribute="leading" secondItem="dl2-Cg-QfY" secondAttribute="leading" constant="12" id="88E-97-bb3"/>
+                                            <constraint firstItem="dru-pJ-Fwl" firstAttribute="leading" secondItem="dl2-Cg-QfY" secondAttribute="leading" constant="40" id="88E-97-bb3"/>
                                             <constraint firstItem="mMj-Bk-qA1" firstAttribute="centerX" secondItem="dl2-Cg-QfY" secondAttribute="centerX" id="97n-NW-6gI"/>
                                             <constraint firstItem="REY-2w-1bj" firstAttribute="leading" secondItem="dl2-Cg-QfY" secondAttribute="leading" constant="5" id="C6C-tW-wGl"/>
                                             <constraint firstItem="LNV-PC-bna" firstAttribute="width" secondItem="LNV-PC-bna" secondAttribute="height" multiplier="1:1" id="IrE-7D-AhJ"/>
@@ -23860,6 +23860,7 @@ Product!</string>
         <image name="telephone (1).png" width="418.90908813476562" height="418.90908813476562"/>
         <image name="trash.circle.fill" catalog="system" width="64" height="60"/>
         <image name="uncheck" width="20" height="20"/>
+        <image name="user_function.png" width="96" height="96"/>
         <image name="welcom_right" width="512" height="512"/>
         <image name="welcome1_center" width="512" height="512"/>
         <image name="welcome_left" width="512" height="512"/>

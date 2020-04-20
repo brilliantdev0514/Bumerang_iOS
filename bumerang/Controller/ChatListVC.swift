@@ -221,10 +221,34 @@ extension ChatListVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let toVC = self.storyboard?.instantiateViewController(withIdentifier: "ChatRoomVC") as! ChatRoomVC
-        toVC.receiveUserId = chatlistData[indexPath.row].senderId
+        //
+        Database.database().reference().child("BlockedUsers").observeSingleEvent(of: .value, with: { (snapshot) in
+                                      // Get user value
+                                        if !snapshot.exists() {
+                                            // handle data not found
+                                            return
+                                        }
+            var groupNames = ""
+                                        for group in snapshot.children {
+                                            groupNames.append((group as AnyObject).key)
+                                        }
+                                        print(groupNames)
+            let uid = Auth.auth().currentUser!.uid
+            if (groupNames.contains(uid + "_" + self.chatlistData[indexPath.row].senderId) ||
+                groupNames.contains(self.chatlistData[indexPath.row].senderId + "_" + uid)) {
+                self.showToast("Kullanıcı engellendi. Yaşadığınız sorunlardan dolayı özür dileriz")
+            } else {
+
+                let toVC = self.storyboard?.instantiateViewController(withIdentifier: "ChatRoomVC") as! ChatRoomVC
+                toVC.receiveUserId = self.chatlistData[indexPath.row].senderId
+                
+                self.navigationController?.pushViewController(toVC, animated: true)
+            }
+                                      }) { (error) in
+                                        print(error.localizedDescription)
+                                    }
+        //
         
-        self.navigationController?.pushViewController(toVC, animated: true)
         
         
     }
@@ -243,13 +267,13 @@ extension ChatListVC : UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChatListCell", for: indexPath) as! ChatListCell
         
-        cell.entity = chatlistData[indexPath.row]
+        cell.entity = self.chatlistData[indexPath.row]
         cell.delegate = self
-        
+
         return cell
+        
     }
 }
 

@@ -133,7 +133,7 @@ class MainbeforeLoginVC: BaseViewController {
         deposit.insert("Depozito", at: 0)
         DepositID.insert(0, at: 0)
         
-        for index in 0 ..< 10 {
+        for index in 0 ..< 11 {
             
             switch index {
                case 0:

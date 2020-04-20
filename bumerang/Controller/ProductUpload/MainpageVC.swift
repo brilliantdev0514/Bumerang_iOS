@@ -210,7 +210,7 @@ class MainpageVC: BaseViewController {
         deposit.insert("Depozito", at: 0)
         DepositID.insert(0, at: 0)
         
-        for index in 1 ..< 11 {
+        for index in 1 ..< 12 {
             
             switch index {
                case 1:
@@ -1153,6 +1153,10 @@ extension MainpageVC : DropdownDelegate {
 //            self.showToast("this is 4", duration: 3, position: .center)
             filterCategory4(dropIndex: dropIndex, selectedVal: selectedVal)
         } else if categoryID == 5 {
+
+            filterCategory5(dropIndex: dropIndex, selectedVal: selectedVal)
+        }
+        else if categoryID == 6 {
 
             filterCategory5(dropIndex: dropIndex, selectedVal: selectedVal)
         }

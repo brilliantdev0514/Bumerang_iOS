@@ -61,6 +61,7 @@
 		510B965A23EAF1C900745A1F /* requestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510B965723EAF1C900745A1F /* requestCell.swift */; };
 		511378B523DFF78E005E856A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511378B423DFF78D005E856A /* Users.swift */; };
 		511378BB23E01920005E856A /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511378BA23E01920005E856A /* ShareData.swift */; };
+		5116EACF244C74A800030C92 /* user_function.png in Resources */ = {isa = PBXBuildFile; fileRef = 5116EACE244C74A700030C92 /* user_function.png */; };
 		512606A22413CD53004A001B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512606A12413CD53004A001B /* StoreKit.framework */; };
 		5182630124352BDD007BD158 /* BBBussiness_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 518262FF24352BDA007BD158 /* BBBussiness_icon.png */; };
 		5182630224352BDD007BD158 /* SSStandard_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5182630024352BDC007BD158 /* SSStandard_icon.png */; };
@@ -303,6 +304,7 @@
 		510B965723EAF1C900745A1F /* requestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = requestCell.swift; sourceTree = "<group>"; };
 		511378B423DFF78D005E856A /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		511378BA23E01920005E856A /* ShareData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
+		5116EACE244C74A700030C92 /* user_function.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user_function.png; path = ../../../user_function.png; sourceTree = "<group>"; };
 		512606A12413CD53004A001B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		518262FF24352BDA007BD158 /* BBBussiness_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BBBussiness_icon.png; sourceTree = "<group>"; };
 		5182630024352BDC007BD158 /* SSStandard_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SSStandard_icon.png; sourceTree = "<group>"; };
@@ -729,6 +731,7 @@
 				518262FF24352BDA007BD158 /* BBBussiness_icon.png */,
 				5182630024352BDC007BD158 /* SSStandard_icon.png */,
 				51A5513F2412B0E000A6568A /* 58px.jpg */,
+				5116EACE244C74A700030C92 /* user_function.png */,
 				51A5513D2412B0E000A6568A /* 60px.jpg */,
 				51A5513C2412B0DF00A6568A /* 76px.jpg */,
 				51A551402412B0E000A6568A /* 80px.jpg */,
@@ -1060,6 +1063,7 @@
 				510B965023EA9C9500745A1F /* search.png in Resources */,
 				04C17D7F238912AE001D5269 /* homered.png in Resources */,
 				510B964E23EA937500745A1F /* image.png in Resources */,
+				5116EACF244C74A800030C92 /* user_function.png in Resources */,
 				51A551472412B0E000A6568A /* 152px.jpg in Resources */,
 				51A551462412B0E000A6568A /* 20px.jpg in Resources */,
 				04CFAE902387C0F900D1BC0C /* greenwallet.png in Resources */,
@@ -1575,7 +1579,7 @@
 				CODE_SIGN_ENTITLEMENTS = bumerang/bumerang.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 988UH8C3RL;
 				INFOPLIST_FILE = bumerang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1600,7 +1604,7 @@
 				CODE_SIGN_ENTITLEMENTS = bumerang/bumerangRelease.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 988UH8C3RL;
 				INFOPLIST_FILE = bumerang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

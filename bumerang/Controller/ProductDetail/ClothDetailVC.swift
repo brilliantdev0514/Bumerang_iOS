@@ -163,10 +163,29 @@ class ClothDetailVC: BaseViewController {
             showToast(R_EN.string.CHAT_REQUEST_FAIL_LOGIN, duration: 2, position: .center)
             return
         }
-                
-        let toVC = self.storyboard?.instantiateViewController(withIdentifier: "ChatRoomVC") as! ChatRoomVC
-        toVC.receiveUserId = oneProduct!.owner_id
-        self.navigationController?.pushViewController(toVC, animated: true)
+        Database.database().reference().child("BlockedUsers").observeSingleEvent(of: .value, with: { (snapshot) in
+                                          // Get user value
+                                            if !snapshot.exists() {
+                                                // handle data not found
+                                                return
+                                            }
+                var groupNames = ""
+                                            for group in snapshot.children {
+                                                groupNames.append((group as AnyObject).key)
+                                            }
+                                            print(groupNames)
+                let uid = Auth.auth().currentUser!.uid
+                if (groupNames.contains(uid + "_" + self.oneProduct!.owner_id) ||
+                    groupNames.contains(self.oneProduct!.owner_id + "_" + uid)) {
+                    self.showToast("Kullanıcı engellendi. Yaşadığınız sorunlardan dolayı özür dileriz")
+                } else {
+                    let toVC = self.storyboard?.instantiateViewController(withIdentifier: "ChatRoomVC") as! ChatRoomVC
+                    toVC.receiveUserId = self.oneProduct!.owner_id
+                    self.navigationController?.pushViewController(toVC, animated: true)
+                }
+                                          }) { (error) in
+                                            print(error.localizedDescription)
+                                        }
     }
     
             @IBAction func editDescription(_ sender: Any)

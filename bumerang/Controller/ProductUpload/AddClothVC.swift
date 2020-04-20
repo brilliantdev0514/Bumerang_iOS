@@ -374,12 +374,12 @@ class AddClothVC: BaseViewController {
         }
     
      @IBAction func imageUploadBtn(_ sender: UIButton) {
-            let intTag = sender.tag
-            if sender.currentImage!.isEqual(UIImage(named: "add"))
-            {
+//            let intTag = sender.tag
+//            if sender.currentImage!.isEqual(UIImage(named: "add"))
+//            {
             selectImage()
-            }
-            else{
+//            }
+//            else{
     //        guard let indexPath = self.collctnVW_imagesToUplosd.indexPathsForVisibleItems.first.flatMap({
     //            IndexPath(item: (intTag-10) , section: $0.section)
     //        }), self.collctnVW_imagesToUplosd.cellForItem(at: indexPath) != nil else {
@@ -404,7 +404,7 @@ class AddClothVC: BaseViewController {
     //
 
                 //self.collctnVW_imagesToUplosd.scrol
-            }
+//            }
         }
     }
 
