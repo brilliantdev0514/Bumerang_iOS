@@ -2141,7 +2141,7 @@ Bu sözleşme en son 14/10/2019 tarihinde güncellenmiştir.
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="20" id="c66-mB-gtn"/>
                                                                             </constraints>
-                                                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
                                                                             <color key="textColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                             <userDefinedRuntimeAttributes>

@@ -136,7 +136,7 @@ class MainbeforeLoginVC: BaseViewController {
         for index in 0 ..< 11 {
             
             switch index {
-               case 0:
+               case 1:
                    
                 var rommNumber = RoomNumberOption().values;
                 var rommNumberID = RoomNumberOption().ids;
@@ -163,7 +163,7 @@ class MainbeforeLoginVC: BaseViewController {
                 oneFilterCell.append(MainFilterModel(titleLbl: price[0], filterLbls: price, filterIDs: priceID, cellWidth: CGFloat(110), logo: UIImage(named: "Deposit")!))
                 oneFilterCell.append(MainFilterModel(titleLbl: deposit[0], filterLbls: deposit, filterIDs: DepositID, cellWidth: CGFloat(70), logo: UIImage(named: "Deposit")!))
                    
-               case 1:
+               case 2:
                    
                    oneFilterCell.append(MainFilterModel(titleLbl: fuel[0], filterLbls: fuel, filterIDs: fuelID, cellWidth: CGFloat(120), logo: UIImage(named: "Fuel")!))
 
@@ -194,7 +194,7 @@ class MainbeforeLoginVC: BaseViewController {
                    oneFilterCell.append(MainFilterModel(titleLbl: price[0], filterLbls: price, filterIDs: priceID, cellWidth: CGFloat(100), logo: UIImage(named: "Deposit1")!))
                 
                    oneFilterCell.append(MainFilterModel(titleLbl: deposit[0], filterLbls: deposit, filterIDs: DepositID, cellWidth: CGFloat(70), logo: UIImage(named: "Deposit")!))
-               case 2:
+               case 3:
                    
                 var bed = RoomNumberOption().values;
                 var bedID = RoomNumberOption().ids;
@@ -247,7 +247,8 @@ class MainbeforeLoginVC: BaseViewController {
         
         oneFilterCell.removeAll()
         oneFilterCell = allFilterData[catagoryID]
-        
+        print("======================")
+        print(catagoryID)
         setVisablity(category: 0)
         ui_collection_filter.reloadData()
         ui_collection_filter.layoutIfNeeded()

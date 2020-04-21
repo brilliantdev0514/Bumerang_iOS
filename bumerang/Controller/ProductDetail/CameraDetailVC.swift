@@ -194,6 +194,9 @@ class CameraDetailVC: BaseViewController {
                                           // Get user value
                                             if !snapshot.exists() {
                                                 // handle data not found
+                                                let toVC = self.storyboard?.instantiateViewController(withIdentifier: "ChatRoomVC") as! ChatRoomVC
+                                                toVC.receiveUserId = self.oneProduct!.owner_id
+                                                self.navigationController?.pushViewController(toVC, animated: true)
                                                 return
                                             }
                 var groupNames = ""
