@@ -1579,7 +1579,7 @@
 				CODE_SIGN_ENTITLEMENTS = bumerang/bumerang.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 988UH8C3RL;
 				INFOPLIST_FILE = bumerang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1604,7 +1604,7 @@
 				CODE_SIGN_ENTITLEMENTS = bumerang/bumerangRelease.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 988UH8C3RL;
 				INFOPLIST_FILE = bumerang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
